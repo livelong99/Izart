@@ -8,12 +8,14 @@ body{
 }
 .navbar {
   background-color: #000000;
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 10vh;
   width: 100%;
+  transition: top 0.3s;
   box-shadow: 0px 3px 6px rgba(21, 21, 21, 0.41);
   vertical-align: center;
+  z-index: 2;
 }
 .navbarheader{
   position: left;
@@ -35,10 +37,9 @@ body{
 .navbarcenter{
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 25%;
+  transform: translate(25%, -50%);
   width: auto;
-  z-index: -1;
 }
 
 .link {
@@ -54,13 +55,15 @@ body{
 
 .navbarright{
   position: absolute;
-  /* border: none;
-  background-color: white; */
+  border: none;
+  background-color: white;
   top: 50%;
   right: 10%;
+  font-weight: 800; 
   transform: translate(10%, -50%);
   border-radius: 10px;
 }
+
 .btnText{
   font-family: Roboto;
   margin: 10px 15px;
@@ -72,7 +75,6 @@ body{
   height: 500px;
   left: 50%;
   transform: translateX(-50%);
-  /* background-image: url("./section01.png"); */
 }
 .section01 img{
   position: absolute;
@@ -150,7 +152,6 @@ body{
   border-radius: 10px;
   font-weight: 500;
   font-size: 20px;
-
 }
 
 .section02{
@@ -291,7 +292,7 @@ body{
 .section03 .Box-l {
   display: inline-block;
   border-radius: 15px;
-  height: 300px;
+  height: 270px;
   width: 30%;
   margin-right: 5%;
   margin-bottom: 50px;
@@ -299,7 +300,7 @@ body{
 .section03 .Box-r {
   display: inline-block;
   border-radius: 15px;
-  height: 300px;
+  height: 270px;
   width: 30%;
   margin-left: 5%;
   margin-bottom: 50px;
@@ -308,7 +309,7 @@ body{
 .section03 .Box-c {
   display: inline-block;
   border-radius: 15px;
-  height: 300px;
+  height: 270px;
   width: 30%;
   margin-bottom: 50px;
 }
@@ -317,7 +318,7 @@ body{
   position: absolute;
   text-align: left;
   width: 30%;
-  margin-top: 30px;
+  margin-top: 0px;
   font-size: 110px;
   font-weight: 1000;
   font-family: Ubuntu;
@@ -342,8 +343,8 @@ body{
   stroke: rgba(255, 255, 255, 1);
   stroke-width: 10.00px;
   stroke-linecap: round;
-  width: 25%;
+  width: 23%;
   height: 10.00px;
-  margin-top: 290px;
+  margin-top: 260px;
   left: 20px;
 }
