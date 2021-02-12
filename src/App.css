@@ -11,71 +11,13 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif,Roboto;
     background-color: #FFFFFF;
-    padding-top: 150px;
-}
-.navbar {
-  background-color: #FFFFFF;
-  position: fixed;
-  top: 0;
-  height: 10vh;
-  width: 100%;
-  transition: top 0.3s;
-  box-shadow: 0px 3px 6px rgba(21, 21, 21, 0.41);
-  z-index: 2;
-}
-.navbarheader{
-  position: left;
-  top: 50%;
-  left: 10%;
-  -ms-transform: translate(-10%,-50%);
-  transform: translate(-10%,-50%);
-  position: absolute;
-  font-family: 'League Spartan Variable';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 40px;
-  margin-top: auto;
-  line-height: 47px;
-  text-align: center;
-  color: #303778;
 }
 
-.navbarcenter{
-  position: absolute;
-  top: 50%;
-  right: 30%;
-  transform: translate(30%, -50%);
-  width: auto;
-}
-
-.link {
-  display: inline-block;
-  line-height: 40px;
-  font-family: "Ubuntu Mono";
-  color: #303778;
-  font-size: 19px;
-  font-weight: 300;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.selected{
-  color: #3343E0;
-  font-weight: 900;
-}
-
-.navbarright{
-  position: absolute;
-  border: none;
-  background-color: #3343E0;
+a{
+  text-decoration: none;
   color: #FFFFFF;
-  top: 50%;
-  right: 10%;
-  font-weight: 500; 
-  transform: translate(10%, -50%);
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
 }
+
 
 .btnText{
   font-family: Ubuntu;
@@ -87,6 +29,7 @@ body{
   width: 80%;
   height: 500px;
   left: 50%;
+  z-index: -1;
   transform: translateX(-50%);
 }
 .section01 img{
@@ -99,7 +42,7 @@ body{
 .headone{
   display:inline-block;
   color: #303778;
-  margin-top: 100px;
+  margin-top: 240px;
   text-align: center;
   font-family: 'League Spartan Variable';
   width: 100%;
@@ -265,6 +208,7 @@ body{
 
 .section02 .service .content .al-right {
   text-align: right;
+  color: #3343E0;
 }
 
 .section02 .service .illus{
