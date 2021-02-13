@@ -1,11 +1,12 @@
 // import './css/nav.css'
 import './App.css';
-import './App1.css';
 import React, {useEffect, useRef, useState} from 'react';
 import Typical from "react-typical";
 import NavigationBar from "./navigationBar.jsx"
 import ThreeC from "./threeC";
-
+import OurWork from "./ourWork";
+import Testimonials from "./Testimonials";
+import Footer from "./Footer";
 
 const App = () => {
   let navRef = useRef(null);
@@ -95,14 +96,9 @@ const App = () => {
           </div>
         </div>
         <ThreeC />
-        <div class="section03">
-          <div class="Box-l"><p data-aos="fade-right" data-aos-offset="50" data-aos-duration="1000">Our Work</p>  <svg data-aos="fade-right" data-aos-offset="50" data-aos-delay="1000" data-aos-duration="1000" preserveAspectRatio="none" viewBox="-5 -5 406 10" class="line2"><path d="M 0 0 L 396 0"  /></svg>  </div>
-          <div data-aos-delay="1000" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1000" className="Box-c white-bg"></div>
-          <div data-aos-delay="1000" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1000" className="Box-r white-bg"></div>
-          <div data-aos-delay="1000" data-aos="fade-right" data-aos-offset="50" data-aos-duration="1000" className="Box-l white-bg"></div>
-          <div data-aos-delay="1000" data-aos="fade-right" data-aos-offset="50" data-aos-duration="1000" className="Box-c white-bg"></div>
-          <div className="Box-r"><div data-aos-delay="1000" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1000" class="button-cont black-bg"><div class="btnText">see more</div></div></div>
-        </div>
+        <Testimonials />
+        <OurWork />
+        <Footer />
         {/* <div class="section21"></div>
         <div class="section22">
           <div class="whatW">What we do</div>

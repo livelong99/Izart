@@ -14,8 +14,8 @@ export default function NavigationBar() {
     const meg02 = useRef(null);
 
     function setMenu(){
-        console.log("main-"+ mainMen);
         if(mainMen == 0){
+            setServ(0);
             meg01.current.style.top = "85px";
             meg02.current.style.top = "85px";
             meg01.current.style.opacity = "0";
