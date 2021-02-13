@@ -26,7 +26,7 @@ a{
 
 .section01{
   position: relative;
-  width: 80%;
+  width: 100%;
   height: 500px;
   left: 50%;
   z-index: -1;
@@ -46,7 +46,7 @@ a{
   text-align: center;
   font-family: 'League Spartan Variable';
   width: 100%;
-  font-size: 75px;
+  font-size: 60px;
   font-style: normal;
   line-height: 0px;
   font-weight: 900;
@@ -208,7 +208,6 @@ a{
 
 .section02 .service .content .al-right {
   text-align: right;
-  color: #3343E0;
 }
 
 .section02 .service .illus{
@@ -230,124 +229,44 @@ a{
 }
 
 
-/* .section02 .text {
-  color: #000000;
-  width: 30%;
-  position: absolute;
-  font-family: Ubuntu;
-  margin-right: 60px;
-  margin-left: 8%;
-  font-size: 120px;
+.steps{
+  margin-top: 300px;
+  position: relative;
+  width: 80%;
+  margin-bottom: 100px;
+  margin-top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.steps .content{
+  display: inline-block;
+  width: 60%;
+}
+
+.steps .sContent .sHead{
+  position: relative;
+  color: #303778;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-family: 'League Spartan Variable';
+  width: 100%;
+  font-size: 55px;
   font-weight: 800;
 }
 
-.section02 .text p{
+.steps .sContent .sub-head{
   position: relative;
-  margin-bottom: -60px;
+  color:#575757;
+  margin-top: -40px;
+  text-align: left;
+  font-family: 'Ubuntu';
+  width: 100%;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500; 
 }
-
-.section02 .text .line1 {
-  position: relative;
-  stroke: rgba(0, 0, 0, 1);
-  stroke-width: 10.00px;
-  margin-top: -60px;
-  stroke-linecap: round;
-  width: 70%;
-  height: 10.00px;
-  top: 0px;
-  left: 6%;
-}
-
-.section02 .carousal {
-
-      display: inline-block;
-      position: absolute;
-      box-sizing: content-box;
-      opacity: 1;
-      background-color: transparent;
-      width: 50%;
-    height: 100%;
-    right: 10%;
-}
-
-.section02 .carousal .main {
-    position: absolute;
-      box-sizing: border-box;
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 80%;
-    height: 100%;
-    right: 0px;
-    top: 0.00px;
-
-}
-
-.section02 .carousal .left {
-      display: block;
-      position: absolute;
-      box-sizing: content-box;
-      width: 15%;
-    height: 20%;
-    left: 5%;
-    bottom: 30px;
-}
-
-.section02 .carousal .left .rectangle3 {
-    position: absolute;
-      box-sizing: content-box;
-    background-color: rgba(0, 0, 0, 1);
-      width: 100%;
-    height: 100%;
-    left: 0.00px;
-    top: 0.00px;
-
-}
-
-.section02 .carousal .left .iconAwesomeArrowLefte356bfef {
-    position: absolute;
-    box-sizing: content-box;
-    fill: #FFFFFF;
-    width: 54.92px;
-    height: 53.53px;
-    top: 50%;
-    left: 50%;
-  transform: translate(-50%, -50%);
-
-}
-
-.section02 .carousal .right {
-
-      display: block;
-      position: absolute;
-      box-sizing: content-box;
-     width: 15%;
-    height: 20%;
-    left: 20%;
-    bottom: 30px;
-}
-
-.section02 .carousal .right .rectangle2 {
-    position: absolute;
-    box-sizing: content-box;
-    background-color: #FFFFFF;
-    width: 100%;
-    height: 100%;
-    left: 0.00px;
-    top: 0.00px;
-
-}
-
-.section02 .carousal .right .iconAwesomeArrowLeft {
-    position: absolute;
-    box-sizing: content-box;
-    fill: rgba(0, 0, 0, 1);
-    width: 54.92px;
-    height: 53.53px;
-    top: 50%;
-    left: 50%;
-  transform: translate(-50%, -50%);
-
-} */
-
 
 .section03 {
   position: relative;

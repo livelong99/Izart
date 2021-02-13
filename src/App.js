@@ -4,6 +4,7 @@ import './App1.css';
 import React, {useEffect, useRef, useState} from 'react';
 import Typical from "react-typical";
 import NavigationBar from "./navigationBar.jsx"
+import ThreeC from "./threeC";
 
 
 const App = () => {
@@ -44,7 +45,7 @@ const App = () => {
  
   return (
     <div>
-      <NavigationBar></NavigationBar>
+      <NavigationBar></NavigationBar>   
         <div ref={oneRef} class="section01">
           <div class="headone">
             <Typical 
@@ -93,6 +94,7 @@ const App = () => {
             <div class="illus"><img src="Images/ser-3.svg" /></div>
           </div>
         </div>
+        <ThreeC />
         <div class="section03">
           <div class="Box-l"><p data-aos="fade-right" data-aos-offset="50" data-aos-duration="1000">Our Work</p>  <svg data-aos="fade-right" data-aos-offset="50" data-aos-delay="1000" data-aos-duration="1000" preserveAspectRatio="none" viewBox="-5 -5 406 10" class="line2"><path d="M 0 0 L 396 0"  /></svg>  </div>
           <div data-aos-delay="1000" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1000" className="Box-c white-bg"></div>
