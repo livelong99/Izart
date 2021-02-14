@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import NavigationBar from "./navigationBar.jsx"
+import NavigationBar from "./navigationBar.jsx";
+import Services from "./Services";
+import Form from "./form"
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Services />
   </React.StrictMode>,
   document.getElementById('root')
 );
