@@ -11,6 +11,8 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif,Roboto;
     background-color: #FFFFFF;
+    width: 100%;
+    overflow-x:auto;
 }
 
 a{
@@ -46,9 +48,9 @@ a{
   text-align: center;
   font-family: 'League Spartan Variable';
   width: 100%;
-  font-size: 60px;
+  font-size: 70px;
   font-style: normal;
-  line-height: 0px;
+  line-height: 70px;
   font-weight: 900;
 }
 
@@ -165,7 +167,7 @@ a{
   color:#575757;
   margin-top: -40px;
   text-align: left;
-  font-family: 'Ubuntu';
+  font-family: 'Sanchez';
   width: 100%;
   font-size: 25px;
   font-style: normal;
@@ -241,12 +243,13 @@ a{
   margin-top: 20px;
   display: inline-block;
   width: 50%;
-  min-width: 300px;
+  min-width: 295px;
 }
 
 .steps .sContent .step{
   margin-top: -100px;
   width: 100%;
+  margin-left: 30px;
 }
 
 

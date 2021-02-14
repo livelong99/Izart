@@ -1,4 +1,5 @@
 import './css/nav.css'
+import './App1.css';
 import React, {useEffect, useRef, useState} from 'react';
 import dimensions from "./Dimensions";
 
@@ -287,7 +288,7 @@ export default function NavigationBar() {
         }
     }
 
-    return(
+    return(<div data-aos="fade-down" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500"> 
         <nav>
             <div class="wrapper">
             <div class="logo"><a href="#">izart</a></div>
@@ -295,7 +296,7 @@ export default function NavigationBar() {
                 <div class="menu-btn__burger"></div>
             </div>
             <ul ref={navRef} class="nav-links">
-                {width>970 ? null : (<li class="logo"><a href="#" class="desktop-item">izart</a><a href="#" class="mobile-item">izart</a></li>)}
+                {width>=970 ? null : (<li class="logo"><a href="#" class="desktop-item">izart</a><a href="#" class="mobile-item">izart</a></li>)}
                 
                 <MegaMen />
 
@@ -307,6 +308,7 @@ export default function NavigationBar() {
             </ul>
             </div>
         </nav>
-    )
+    </div>   
+    );
 }
 
