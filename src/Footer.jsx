@@ -1,56 +1,58 @@
 import React from "react";
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import RoomIcon from '@material-ui/icons/Room';
+import PhoneIcon from '@material-ui/icons/Phone';
+import MailIcon from '@material-ui/icons/Mail';
 
 const Footer = () => {
     return(
-        <footer class="footer-distributed">
-
-			<div class="footer-left">
-          <img src="Izartlogo.png" />
-				<h3>izart<span> content services</span></h3>
-
-				<p class="footer-links">
-					<a href="#">Home</a>
-					|
-					<a href="#">Blog</a>
-					|
-					<a href="#">About</a>
-					|
-					<a href="#">Contact</a>
-				</p>
-
-				<p class="footer-company-name">© 2021 Izart content services Pvt. Ltd.</p>
+		<div class="foot">
+        <footer>
+			<div class="container">
+				<div class="sec aboutus">
+					<h2>About Us</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<ul class="sci">
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+				</ul>
 			</div>
-
-			<div class="footer-center">
-				<div>
-					<i class="fa fa-map-marker"></i>
-					  <p><span>309 - Rupa Solitaire,
-						 Bldg. No. A - 1, Sector - 1</span>
-						Mahape, Navi Mumbai - 400710</p>
-				</div>
-
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+91 22-27782183</p>
-				</div>
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
-				</div>
+			<div class ="sec quick">
+				<h2>Quick Links</h2>
+				<ul class="links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Resource</a></li>
+					<li><a href="#">Industries</a></li>
+				</ul>
 			</div>
-			<div class="footer-right">
-				<p class="footer-company-about">
-					<span>About the company</span>
-					We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
-				<div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-youtube"></i></a>
-				</div>
+			<div class ="sec contact">
+				<h2>Contact Info</h2>
+				<ul class="info">
+					<li>
+						<span><i class=" loc fa fa-map-marker" aria-hidden="true"></i></span>
+						<span>Jaipur Express<br/>near Manipal University Jaipur<br/>India</span>
+					</li>
+					<li>
+						<span><i class="fa fa-phone" aria-hidden="true"></i></span>
+						<p><a href="tel:9319150688">+91 9319150688</a></p>
+					</li>
+					<li>
+						<span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+						<p><a href="mailto:izart@gmail.com">izart@gmail.com</a></p>
+					</li>
+				</ul>
 			</div>
+			</div>
+			
+			
 		</footer>
+		</div>
     )
 }
 

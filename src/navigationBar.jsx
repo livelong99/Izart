@@ -32,6 +32,7 @@ export default function NavigationBar() {
             meg02.current.style.visibility = "hidden";
         }
         else if(mainMen == 2){
+            setServ(0);
             meg01.current.style.top = "85px";
             meg02.current.style.top = "70px";
             meg01.current.style.opacity = "0";
