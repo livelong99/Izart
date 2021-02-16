@@ -1,0 +1,185 @@
+@media (max-width: 1150px){
+  .section02{
+    width: 85%;
+  }
+
+  .wrapper .nav-links{
+    margin-left: 90%;
+  }
+}
+
+@media (max-width: 991px){
+
+  .headone{
+    font-size: 60px;
+    margin-top: 320px;
+    margin-bottom: 60px;
+  }
+
+  .subhead{
+    font-size: 25px;
+  }
+
+  .subhead p{
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .section02H{
+    margin-top: 550px;
+    margin-bottom: -70px;
+    font-size: 55px; 
+  }
+
+  .section02{
+    width: 90%;
+  }
+
+  .section02 .service{
+    margin-top: 10px;
+  }
+
+  .section02 .service .content{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  .section02 .service .content .head,
+  .section02 .service .content .sub-head,
+  .section02 .service .content .body{
+    text-align: center;
+  }
+
+  .section02 .service .content .head{
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  .section02 .service .content .sub-head{
+    font-size: 22px;
+  }
+
+  .section02 .service .content .body{
+    font-size: 18px;
+  }
+
+  .section02 .service .content .more{
+    margin-left: 35%;
+  }
+  .section02 .service .content .bt-right{
+    margin-left: 35%;
+  }
+
+  .section02 .service .content .al-right {
+    text-align: center;
+  }
+
+  .section02 .service .illus{
+    width: 100%;
+    margin-top:0px;
+  }
+
+  .section02 .service .illus img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-100%);
+  }
+
+  .section02 .service .illus .left{
+    position: relative;
+    left: 50%;
+    transform: translateX(-100%);
+    margin-left: 150px;
+    top: 60px;
+  }
+
+  /* .steps{
+    width: 100%;
+  } */
+
+  .steps .sContent{
+    margin-left: 50px;
+    width: 100%;
+  }
+
+  .steps .sContent .step{
+    margin-top: -50px;
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .steps .sContent .step .sHead{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  .steps .sContent .step .sSubHead{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .arrow img{
+    margin-top: -10px;
+    margin-left: -20px;
+    height: 100px;
+  }
+
+  .steps .sIllus img{
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .testimonials .inner h1{
+    color: #303778;
+    text-align: center;
+    font-family: 'League Spartan Variable';
+    width: 100%;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900; 
+  }
+}
+
+@media (max-width: 450px){
+
+  .headone{
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 160px;
+    margin-bottom: 60px;
+  }
+  
+  .subhead{
+    font-size: 22px;
+  }
+
+  .subhead p{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .section02H{
+    margin-top: 300px; 
+  }
+
+  .section02 .service .content .more{
+    margin-left: 20%;
+  }
+  .section02 .service .content .bt-right{
+    margin-left: 20%;
+  }
+  .steps .sContent{
+    margin-left: 5px;
+    width: 100%;
+  }
+
+  .steps .sContent .step{
+    margin-top: -50px;
+    width: 100%;
+    margin-left: 30px;
+  }
+}
