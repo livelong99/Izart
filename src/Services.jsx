@@ -63,7 +63,7 @@ const Service = () => {
     return(
         <div>
             <NavigationBar />
-
+            
             <div class="headServ"></div>
             <div class="home">
             <div class="heading">
