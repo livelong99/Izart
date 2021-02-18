@@ -102,23 +102,9 @@ const App = () => {
         </div>
         <ThreeC />
         <Testimonials />
-        {/* <OurWork /> */}
+        <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+919319150688"><img src="Images/whatsapp.svg" /></a>
+        <OurWork />
         <Footer />
-        {/* <div class="section21"></div>
-        <div class="section22">
-          <div class="whatW">What we do</div>
-          <div class="content">
-            <div class="box_typeA"></div>
-            <div class="box_typeB" ></div>
-            <div class="box_typeA"></div>
-            <div class="box_typeB"></div>
-            <div class="box_typeA"></div>
-            <div class="box_typeB"></div>
-          </div>
-        </div>
-        <div class="section03">
-          <div class="imgLap"></div>
-        </div> */}
     </div>
   );
 }

@@ -70,16 +70,13 @@ const Service = () => {
                 Article Writing
               </div>
               <div class="backimg">
-
               </div>
             </div>
-            <div class="servForm"></div>
             <div class="servContent">
-                <h1 >Facebook</h1>
                 <div ref={write} class="writeUp">
+                <h1 >Facebook</h1>
 
-
-Facebook has over 2.45 BILLION Monthly users. How many of them are your brand’s consumers?
+<p>Facebook has over 2.45 BILLION Monthly users. How many of them are your brand’s consumers?
 
 What if we tell you that you can beat your competition and increase your revenues tenfold by just investing in a good Social Media Content Strategy and creating content regularly.
 
@@ -88,13 +85,13 @@ Want to know how we can do it for you?
 At Izart, we create content that is carefully structured, methodically curated, and strategically promoted. We use data driven insights to understand your audience. We then position your brand via content in such a way that potential prospects discover you and not the other way around.
 
 Our content converts idle readers to active consumers. So fill out the form, and let us increase your brand’s revenue right now!
-</div>
+</p></div>
                 <div class="servForm">
                     {formfunc()}
                 </div>
+                </div>
                 <div class="graphics">
                     <div class="blank-start">
-
                     </div>
                     <div class="blk">
                         <div class="blkContent">
@@ -138,9 +135,9 @@ Our content converts idle readers to active consumers. So fill out the form, and
                         <img class="tri-2" src="Images/triangle02.svg" />
                         <img class="tri-1" src="Images/triangle.svg" />
                     </div>
+                    <div class="blank-start"></div>
 
                 </div>
-            </div>
             <div class="testimonials">
               <div class="inner">
                 <h1>Articles</h1>

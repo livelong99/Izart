@@ -3,9 +3,11 @@
     width: 85%;
   }
 
-  .wrapper .nav-links{
-    margin-left: 90%;
+  .OuterDiv{
+    width: 90%;
+    left: 5%;
   }
+
 }
 
 @media (max-width: 991px){
@@ -142,6 +144,36 @@
     font-style: normal;
     font-weight: 900; 
   }
+
+  .OuterDiv{
+    width: 80%;
+    left: 10%;
+  }
+
+  .OuterDiv .section03 {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 100%;
+  }
+
+  .section03 .Box-l{
+    width: 45%;
+  }
+
+  .section03 .Box-r{
+    width: 45%;
+  }
+
+  .OuterDiv .blogrow{
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .containerforourwork{
+    display: inline-block;
+    width: 45%;
+    margin-left: 5%;
+  }
 }
 
 @media (max-width: 450px){
@@ -181,5 +213,38 @@
     margin-top: -50px;
     width: 100%;
     margin-left: 30px;
+  }
+
+  .OuterDiv{
+    width: 80%;
+    left: 10%;
+  }
+
+  .OuterDiv .section03 {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 100%;
+  }
+
+  .section03 .Box-l{
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .section03 .Box-r{
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .OuterDiv .blogrow{
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .containerforourwork{
+    display: inline-block;
+    width: 50%;
   }
 }

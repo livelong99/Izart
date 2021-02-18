@@ -12,7 +12,7 @@ body{
     font-family: Arial, Helvetica, sans-serif,Roboto;
     background-color: #FFFFFF;
     width: 100%;
-    overflow-x:auto;
+    overflow-x:hidden;
 }
 
 a{
@@ -230,6 +230,10 @@ a{
   top: 80px;
 }
 
+.threeC{
+  width: 100%;
+}
+
 
 .steps{
   margin-top: 200px;
@@ -410,7 +414,6 @@ a{
   font-size: 15px;
   color: #707172;
   margin-bottom: 15px;
-
   font-family: "Ubuntu Mono";
 }
 
@@ -423,9 +426,6 @@ a{
 }
 
 .containerforourwork{
-  background-color: white;
-   border-radius: 25px;
-
     margin-bottom: 30px;
 }
 
@@ -471,7 +471,7 @@ a{
 
 .col{
   flex: 30%;
-  max-width: 30%;
+  max-width: 25%;
   box-sizing: border-box;
   padding: 15px;
 }
@@ -483,7 +483,7 @@ a{
 .testimonial img{
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 500%;
 }
 .name{
   font-size: 20px;
@@ -701,7 +701,21 @@ footer .container .sec.aboutus p{
   }
 }
 
+.whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  filter: drop-shadow(0.3rem 0.3rem 0.3rem grey);
+}
 
+.whatsapp img{
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+.whatsapp img:hover{
+  height: 55px;
+}
 
 
 

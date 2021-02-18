@@ -13,18 +13,23 @@ export default function NavigationBar() {
     const {width} = dimensions();
     const meg01 = useRef(null);
     const meg02 = useRef(null);
+    const navBg = useRef(null);
 
     function setMenu(){
         if(mainMen == 0){
             setServ(0);
+            navBg.current.style.display = "none";
+            // navBg.current.style.zIndex = "-20";
             meg01.current.style.top = "85px";
             meg02.current.style.top = "85px";
             meg01.current.style.opacity = "0";
             meg01.current.style.visibility = "hidden";
             meg02.current.style.opacity = "0";
             meg02.current.style.visibility = "hidden";
+
         }
         else if(mainMen == 1){
+            navBg.current.style.display = "block";
             meg01.current.style.top = "70px";
             meg02.current.style.top = "85px";
             meg01.current.style.opacity = "1";
@@ -34,6 +39,7 @@ export default function NavigationBar() {
         }
         else if(mainMen == 2){
             setServ(0);
+            navBg.current.style.display = "block";
             meg01.current.style.top = "85px";
             meg02.current.style.top = "70px";
             meg01.current.style.opacity = "0";
@@ -176,13 +182,13 @@ export default function NavigationBar() {
         else{
             return(
                 <li >
-                <a onClick={() => {mainMen == 1 ? setMain(0) : setMain(1)}} href="#" class="desktop-item">Services</a>
+                <a onClick={() => {mainMen == 1 ? setMain(0) : setMain(1)}} href="javascript:void(0);" class="desktop-item">Services</a>
                 <input type="checkbox" id="showMega" />
                 <label for="showMega" class="mobile-item">Services</label>
                 <div ref={meg01} class="mega-box">
                     <div class="content">
-                    <div class="row">
-                        <ul class="mega-links">
+                    <div onClick={() => setServ(0)} class="row">
+                        <ul onClick={() => setServ(0)} class="mega-links">
                         <li><a href="#">Whitepaper</a></li>
                         <li><a href="#">Website Content</a></li>
                         <li><a href="#">Technical Writing</a></li>
@@ -235,7 +241,7 @@ export default function NavigationBar() {
         else{
             return(
                 <li>
-                <a onClick={() => {mainMen == 2 ? setMain(0) : setMain(2)}} href="#" class="desktop-item">Industries</a>
+                <a onClick={() => {mainMen == 2 ? setMain(0) : setMain(2)}} href="javascript:void(0);" class="desktop-item">Industries</a>
                 <input type="checkbox" id="showMega" />
                 <label for="showMega" class="mobile-item">Industries</label>
                 <div ref={meg02} class="mega-box">
@@ -291,8 +297,9 @@ export default function NavigationBar() {
     return(<div data-aos="fade-down" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500"> 
         <nav>
             <div class="wrapper">
-            <div class="logo"><a href="#">izart</a></div>
-            <div ref={menuRef} onClick={menuClick} class="menu-btn">
+            <div ref={navBg} onClick={() => setMain(0)} class="navBg" />
+            <div class="logo"><a href="">izart</a></div>
+            <div  ref={menuRef} onClick={menuClick} class="menu-btn">
                 <div class="menu-btn__burger"></div>
             </div>
             <ul ref={navRef} class="nav-links">

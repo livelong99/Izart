@@ -201,7 +201,7 @@ nav ul ul ul li{
 
 nav{
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   box-shadow: 0px 3px 6px rgba(21, 21, 21, 0.41);
   background: #FFFFFF;
@@ -277,6 +277,15 @@ nav .wrapper{
   text-decoration: none;
 }
 
+.navBg{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  top: 0px;
+  bottom: 0px;
+}
+
 .nav-links .logo a{
   margin-top: 40px;
   margin-bottom: 50px;
@@ -284,6 +293,7 @@ nav .wrapper{
 .wrapper .nav-links{
   display: inline-flex;
   margin-left: 30%;
+  z-index: 10;
 }
 
 @media (max-width: 1150px){

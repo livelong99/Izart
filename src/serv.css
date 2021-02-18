@@ -33,42 +33,55 @@ text-align: center;
     position: relative;
     width: 90%;
     left: 5%;
+    background-color: rgba(119,131,240, 0.6);
 }
 
 
 .servContent .writeUp{
-  vertical-align: text-bottom;
 
-    display: inline-block;
+    display: inline-flex;
+    justify-content:space-between;
     width: 50%;
     height: 500px;
-    background-color:white;
-    margin-bottom: 400px;
-    font-size: 25px;
-    font-weight: 700;
-    color: #303778;
-    font-family: 'League Spartan Variable';
+    
+}
+
+.servContent .writeUp h1{
+  width: 100%;
+  margin-left: 100px;
+  font-size: 55px;
+  font-weight: 800;
+  color: #303778;
+  font-family: 'League Spartan Variable';
+}
+.servContent .writeUp p{
+  width: 100%;
+  margin-top: 130px;
+  margin-left: -400px;
+  font-size: 20px;
+  font-family: "Sanchez";
+  font-weight: 400;
 }
 
 .servContent .servForm{
-  padding-left: 30px;
-  vertical-align: text-bottom;
-  display: inline-block;
+  padding-left: 70px;
+  display: inline-flex;
   width: 40%;
-  margin-bottom: 40px;
 }
 
-.servContent .graphics{
+.graphics{
     position: relative;
     display: flex;
     justify-content: right;
-    width: 100%;
+    width: 90%;
+    margin-top: 100px;
     margin-bottom: 50px;
+    margin-left: 5%;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.servContent .graphics .blk{
+.graphics .blk{
     display: inline-flex;
     width: 20%;
     justify-content:right;
@@ -78,38 +91,38 @@ text-align: center;
     box-shadow: -5px 0px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
-.servContent .graphics .blank-end{
+.graphics .blank-end{
     width:0%;
     height: 400px;
     box-shadow: -5px 0px 20px 2px rgba(0, 0, 0, 0.55);
 }
 
-.servContent .graphics .blank-start{
+.graphics .blank-start{
     z-index: 2;
     width:0%;
     height: 400px;
     box-shadow: 5px 0px 20px 2px rgba(0, 0, 0, 0.55);
 }
 
-.servContent .graphics .blk img.tri-1{
+.graphics .blk img.tri-1{
     height: 100px;
     margin-top:150px;
 }
 
-.servContent .graphics .blk img.tri-2{
+.graphics .blk img.tri-2{
     z-index: 5;
     margin-right: -60px;
     height: 100px;
     margin-top:150px;
 }
 
-.servContent .graphics .blk .blkContent{
+.graphics .blk .blkContent{
     padding-top: 50px;
     width: 85%;
     margin-right: 25px;
 }
 
-.servContent .graphics .blk .blkContent .blkHead{
+.graphics .blk .blkContent .blkHead{
     text-align: center;
     margin-top: 20px;
     font-size: 35px;
@@ -118,7 +131,7 @@ text-align: center;
     color: #303778;
 }
 
-.servContent .graphics .blk .blkContent .blkBdy{
+.graphics .blk .blkContent .blkBdy{
     text-align: center;
     margin-top: 20px;
     margin-left: 20px;
@@ -180,10 +193,11 @@ iframe {
 
 
 
-.form-container .container-contact1 {
+.container-contact1 {
     position: relative;
   width: 90%;
-  background: #000;
+  margin-left: 50px;
+  background: rgba(119,131,240, 0.6);
   border-radius: 10px;
   overflow: hidden;
   display: -webkit-box;
@@ -191,11 +205,10 @@ iframe {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
-  padding: 20px 50px 20px 50px;
+  padding: 20px 50px 20px 0px;
 }
 
 .contact1-form {
@@ -447,176 +460,4 @@ textarea.input1 + .shadow-input1 {
     visibility: visible;
     opacity: 1;
   }
-}
-
-.testimonials{
-  padding: 40px 0;
-  background: #f1f1f1;
-  color: #434343;
-  text-align: center;
-}
-.inner{
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
-}
-
-
-
-.row1{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-
-.col{
-  flex: 30%;
-  max-width: 25%;
-  box-sizing: border-box;
-  padding: 15px;
-}
-.testimonial{
-  background: #fff;
-  padding: 30px;
-}
-.testimonial img{
-  width: 200px;
-  height: 200px;
-  border-radius: 0%;
-}
-.name{
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #303778;
-  font-weight: 700;
-}
-
-
-.OuterDiv{
-  position: relative;
-  margin-top: 300px;
-  margin-bottom: 300px;
-  width: 80%;
-  left: 10%;
-}
-
-.OuterDiv .blogrow{
-  display: inline-block;
-  vertical-align: text-top;
-  width: 25%;
-}
-
-.OuterDiv .section03 {
-  display: inline-block;
-  vertical-align: text-top;
-  width: 75%;
-  left: 10%;
-
-}
-
-.section03 .Box-l {
-  display: inline-block;
-  border-radius: 10px;
-  height: 240px;
-  width: 40%;
-  margin-right: 5%;
-  margin-bottom: 25px;
-}
-.section03 .Box-r {
-  display: inline-block;
-  border-radius: 10px;
-  height: 240px;
-  width: 40%;
-  margin-left: 5%;
-  margin-bottom: 25px;
-}
-
-.section03 .Box-c {
-  display: inline-block;
-  border-radius: 10px;
-  height: 240px;
-  width: 30%;
-  margin-bottom: 25px;
-}
-
-.section03 .Box-l p{
-  position: absolute;
-  text-align: left;
-  width: 30%;
-  margin-top: 0px;
-  font-size: 90px;
-  line-height: 105px;
-  font-weight: 1000;
-  font-family: "League Spartan Variable";
-  color: #303778;
-}
-
-.white-bg{
-  background-color: rgba(51,67,224, 0.1);;
-}
-
-.white1-bg{
-  background-color: #FFFFFF;
-}
-
-.black-bg{
-  background-color: black;
-}
-
-.section03 .Box-r .button-cont{
-  position: absolute;
-  border-radius: 10px;
-  border: 5px solid #000000;
-  font-weight: 400;
-  color: #000000;
-  margin-top: 125px;
-  margin-left: 10%;
-  font-size: 30px;
-}
-
-.section03 .Box-l .line2 {
-  position: absolute;
-  stroke: #303778;
-  stroke-width: 10.00px;
-  stroke-linecap: round;
-  width: 23%;
-  height: 10.00px;
-  margin-top: 210px;
-  left: 10px;
-}
-.headOurWork{
-  text-align: left;
-  font-family: 'League Spartan Variable';
-  font-size: 30px;
-  font-weight: 900;
-  color: #303778;
-  margin-bottom: 10px;
-}
-
-.subheadWork{
-  text-align: left;
-  color: grey;
-  font-size: 15px;
-  color: #707172;
-  margin-bottom: 15px;
-
-  font-family: "Ubuntu Mono";
-}
-
-.readmore1{
-  text-align: left;
-  color: #3343E0;
-  font-weight: bold;
-  font-size: 15px;
-  margin-bottom: 35px;
-}
-
-.containerforourwork{
-  background-color: white;
-   border-radius: 25px;
-
-    margin-bottom: 30px;
 }
