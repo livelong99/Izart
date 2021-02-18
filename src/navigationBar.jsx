@@ -283,11 +283,13 @@ export default function NavigationBar() {
 
     const menuClick = (e) => {
         if(!menuO){
+            navRef.current.style.width = "100%"
             menuRef.current.classList.add('open');
             navRef.current.style.left = "0%"
             setMenuO(true);
         }
         else{
+            navRef.current.style.width = "100%"
             menuRef.current.classList.remove('open');
             setMenuO(false);
             navRef.current.style.left = "-100%"
