@@ -1,195 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
-
-body{
-  background: #f2f2f2;
-}
-nav{
-  background: #FFFFFF;
-  transition: top 0.3s;
-  box-shadow: 0px 3px 6px rgba(21, 21, 21, 0.41);
-  z-index: 2;
-  position: absolute;
-  height: 76px;
-  width: 100%;
-}
-nav:after{
-  content: '';
-  clear: both;
-  display: table;
-}
-nav .logo{
-    position: absolute;
-    left: 10%;
-    -ms-transform: translate(-10%);
-    transform: translate(-10%);
-    font-family: 'League Spartan Variable';
-    float: left;
-    color: #303778;
-    font-size: 40px;
-    margin-top: 10px;
-    font-weight: 900;
-    line-height: 70px;
-}
-nav ul{
-  float: right;
-  margin-right: 10%;
-  list-style: none;
-  position: relative;
-}
-nav ul li{
-  float: left;
-  display: inline-block;
-  background: #FFFFFF;
-  margin: 0px 5px;
-  height: 60px;
-}
-nav ul li a{
-  color: #303778;
-  line-height: 45px;
-  font-family: "League Spartan Variable";
-  text-decoration: none;
-  font-size: 19px;
-  font-weight: 300;
-  padding: 5px 15px;
-}
-
-nav ul li.btn-text {
-    margin-left: 40px;
-}
-
-nav ul li.btn-text a{
-    color: #FFFFFF;
-    background-color: #3343E0;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
-    padding: 8px 15px;
-}
-
-nav ul li.btn-text a:hover{
-    background-color: #3343E0;
-}
-
-
-nav ul li a:hover{
-  background-color: #E2E2E2;
-  border-radius: 5px;
-}
-nav ul ul li a:hover{
-  background-color: #F8F8F8;
-  box-shadow: none;
-}
-nav ul ul{
-  position: absolute;
-  top: 70px;
-  width: 150px;
-  border-top: 3px solid #303778;
-  opacity: 0;
-  visibility: hidden;
-  transition: top .3s;
-}
-nav ul ul ul{
-  border-top: none;
-  
-}
-nav ul li:hover > ul{
-  top: 58px;
-  opacity: 1;
-  visibility: visible;
-}
-nav ul ul li{
-  position: relative;
-  margin: 0px;
-  width: 250px;
-  float: none;
-  display: list-item;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
-}
-nav ul ul li a{
-  line-height: 50px;
-}
-nav ul ul ul li{
-  position: relative;
-  top: -70px;
-  left: 210px;
-}
-.show,.icon,input{
-  display: none;
-}
-.fa-plus{
-  font-size: 15px;
-  margin-left: 40px;
-}
-@media all and (max-width: 968px) {
-  nav ul{
-    margin-right: 0px;
-    float: left;
-  }
-  nav .logo{
-    padding-left: 30px;
-    width: 100%;
-  }
-  .show + a, ul{
-    display: none;
-  }
-  nav ul li,nav ul ul li{
-    display: block;
-    width: 100%;
-  }
-  nav ul li a:hover{
-    box-shadow: none;
-  }
-  .show{
-    display: block;
-    color: #303778;
-    font-size: 18px;
-    padding: 0 20px;
-    line-height: 70px;
-    cursor: pointer;
-  }
-  .show:hover{
-    color: #303778;
-  }
-  .icon{
-    display: block;
-    color: #303778;
-    position: absolute;
-    top: 0;
-    right: 40px;
-    line-height: 70px;
-    cursor: pointer;
-    font-size: 25px;
-  }
-  nav ul ul{
-    top: 70px;
-    border-top: 0px;
-    float: none;
-    position: static;
-    display: none;
-    opacity: 1;
-    visibility: visible;
-  }
-  nav ul ul a{
-    padding-left: 40px;
-  }
-  nav ul ul ul a{
-    padding-left: 80px;
-  }
-  nav ul ul ul li{
-    position: static;
-  }
-  [id^=btn]:checked + ul{
-    display: block;
-  }
-  nav ul ul li{
-    border-bottom: 0px;
-  }
-  span.cancel:before{
-    content: '\f00d';
-  }
-}
- */
-
 
  @font-face {
     font-family: 'League Spartan Variable';
@@ -205,6 +13,7 @@ nav{
   width: 100%;
   box-shadow: 0px 3px 6px rgba(21, 21, 21, 0.41);
   background: rgba(255,255,255,0.8);
+  background-color: #303778;
 }
 
 .menu-btn {
@@ -270,7 +79,7 @@ nav .wrapper{
 }
 
 .wrapper .logo a{
-  color: #303778;
+  color: white;
   font-size: 40px;
   font-family: "League Spartan Variable";
   font-weight: 900;
@@ -307,7 +116,7 @@ nav .wrapper{
   list-style: none;
 }
 .nav-links li a{
-  color: #303778;
+  color: white;
   font-family: "League Spartan Variable";
   text-decoration: none;
   font-size: 20px;
@@ -321,8 +130,8 @@ nav .wrapper{
 }
 
 .nav-links li.btn-text a{
-  color: #FFFFFF;
-  background-color: #3343E0;
+  color: #303778;
+  background-color: #FEB848;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
   padding: 8px 15px;
@@ -333,7 +142,7 @@ nav .wrapper{
 }
 
 .nav-links li.btn-text a:hover{
-  background-color: #3343E0;
+  background-color: #FEB848;
 }
 
 .nav-links .mobile-item{
@@ -412,13 +221,13 @@ nav .wrapper{
   color: #FFFFFF;
   width: auto;
   font-size: 20px;
-  background-color: #3343E0;
+  background-color: #FEB848;
   text-align: center;
   border-radius: 5px;
   margin-top: 40px;
   margin-left: 80px;
   margin-right: 80px;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);  
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
 }
 
 .content .row .cont-btn p{
@@ -502,12 +311,12 @@ nav .wrapper{
 
   .nav-links li.btn-text a{
     color: #FFFFFF;
-    background-color: #3343E0;
+    background-color: #FEB848;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
     padding: 8px 15px;
   }
-  
+
   .nav-links li.btn-text {
     margin-top: 50px;
     width: 150px;
@@ -532,10 +341,11 @@ nav .wrapper{
   }
   .nav-links .desktop-item{
     display: none;
+    color: #FEB848;
   }
   .nav-links .mobile-item{
     display: block;
-    color: #303778;
+    color: #FEB848;
     font-size: 25px;
     font-weight: 600;
     padding-left: 20px;
@@ -597,4 +407,3 @@ nav .wrapper{
 nav input{
   display: none;
 }
-

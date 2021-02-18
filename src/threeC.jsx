@@ -2,7 +2,7 @@ import React from "react";
 
 const ThreeC = () => {
     return(
-        <div class="threeC">
+        <div class="c3">
             <div class="section02H">
                 <p>How We Work</p>
             </div>
