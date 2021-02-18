@@ -62,7 +62,6 @@ const Service = () => {
 
     return(
         <div>
-            <NavigationBar />
             
             <div class="headServ"></div>
             <div class="home">
@@ -230,7 +229,6 @@ Our content converts idle readers to active consumers. So fill out the form, and
             </div>
             </div>
             </div>
-            <Footer />
         </div>
     )
 }

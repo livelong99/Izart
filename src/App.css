@@ -20,6 +20,22 @@ a{
   color: #FFFFFF;
 }
 
+.blink_me {
+  animation: blinker01 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes blinker01 {
+  50% {
+    opacity: 0;
+  }
+}
+
 
 .btnText{
   font-family: Ubuntu;
@@ -38,18 +54,21 @@ a{
 .section01 .mainTxt{
   display: inline-block;
   width: 60%;
+  height: 400px;
 }
 
 .section01 .mainIll{
   display: inline-block;
+  animation: blinker 1s linear 3;
   width: 40%;
+  height: 400px;
   transition: all 0.7s ease-in;
 }
 
 .section01 .mainIll img{
+  position: absolute;
+  top: 150px;
   width: 400px;
-  margin-bottom: -120px;
-  margin-left: 50px;
   transition: all 0.3s ease-in;
 }
 
@@ -331,12 +350,16 @@ a{
   display: inline-block;
   width: 50%;
 }
-
-.steps .sIllus img{
+.steps .sIllus img.glow{
   height: 400px;
   margin-left: 20%;
-  margin-bottom: 35%;
-  filter: drop-shadow(0.5rem 0.5rem 1rem grey);
+  filter: drop-shadow(0.1rem 0.1rem 0.5rem #FFFFFF);
+}
+
+.steps .sIllus img.ptArr{
+  margin-top: 100px;
+  height: 350px;
+  margin-left: 50%;
 }
 
 .OuterDiv{
