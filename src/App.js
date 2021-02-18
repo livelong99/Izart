@@ -46,31 +46,31 @@ const App = () => {
 //   }
 
 // });
- 
+
   return (
     <div>
-      <NavigationBar></NavigationBar>   
+      <NavigationBar></NavigationBar>
         <div ref={oneRef} class="section01">
           <div class="mainTxt">
           <div class="headone">
-            <Typical 
+            <Typical
               steps={[500, 'Home of Data Driven Storytellers.', 1000]}
               loop={1}
-              wrapper="p"            
+              wrapper="p"
             />
           </div>
           <div data-aos="fade-zoom-out" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="subhead">
             <p>We scale up business’s revenues by writing content that sells.</p>
           </div>
           </div>
-          
+
           <div class="mainIll"><img src="Images/homeS.svg" /></div>
           {/* <div class="buttons">
             <a href="#"><div data-aos="fade-zoon-out" data-aos-delay="3000" dat-aos-offset="100" data-aos-duration="1000" class="leftB"><div class="btnText">Let's Talk</div></div></a>
             <a href="#"><div data-aos="fade-zoon-out" data-aos-delay="3000" dat-aos-offset="10  0" data-aos-duration="1000" class="rightB"><div  class="btnText">Let's Start</div></div></a>
           </div> */}
         </div>
-        <div class="section02H">
+        <div class="section02H1">
           <p>Our Service Types</p>
         </div>
         <div class="section02">

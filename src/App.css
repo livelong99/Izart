@@ -135,6 +135,20 @@ a{
   padding-bottom: 20px;
 }
 
+.section02H1{
+  position: relative;
+  color: #303778;
+  margin-top: 300px;
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'League Spartan Variable';
+  width: 100%;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+
 .section02H{
   position: relative;
   color: #FEB848;
