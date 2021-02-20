@@ -48,35 +48,32 @@ a{
   position: relative;
   width: 80%;
   left: 10%;
+  padding-top: 200px;
   z-index: -1;
 }
 
 .section01 .mainTxt{
   display: inline-block;
+  position: relative;
   width: 60%;
-  height: 500px;
 }
 
 .section01 .mainIll{
   display: inline-block;
   animation: blinker 1s linear 3;
   width: 40%;
-  height: 400px;
   transition: all 0.7s ease-in;
 }
 
 .section01 .mainIll img{
-  position: absolute;
-  top: 150px;
-  width: 400px;
   transition: all 0.3s ease-in;
 }
 
 
 .headone{
   display:inline-block;
+  align-items: center;
   color: #303778;
-  margin-top: 180px;
   text-align: left;
   font-family: 'League Spartan Variable';
   width: 90%;
@@ -88,12 +85,12 @@ a{
 
 .subhead{
   display:inline-block;
-  color: rgba(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.7);
   text-align: left;
   font-family: "Ubuntu Mono";
   width: 100%;
   font-size: 25px;
-  margin-top: -200px;
+  padding-top: 00px;
   top: 0px;
   font-style: normal;
   font-weight: 400;

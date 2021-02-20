@@ -7,7 +7,7 @@ import dimensions from "./Dimensions";
 
 const Types = () => {
     return(
-        <div>
+        <div class="types">
             <div class="section01">
           <div class="mainTxt">
           <div class="headone">

@@ -1,72 +1,87 @@
-.home{
-position: relative;
-margin-top: 100px;
-margin-bottom: 250px;
-}
-.home .heading {
-display: inline-block;
 
-width: 60%;
-font-size: 90px;
-font-weight: 700;
-color: #303778;
-font-family: 'League Spartan Variable';
-text-align: center;
+.serv .section01 .mainTxt{
+  transform: translateY(-100px);
 }
 
-.home .backimg{
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+.darkBg{
+  background-color: #303778;
+  margin-top: 200px;
+  z-index: -2;
 }
-
-
-
-.headServ{
-    position: relative;
-    width: 100%;
-    height: 100px;
-}
-
 
 .servContent{
     position: relative;
     width: 90%;
     left: 5%;
-    background-color: rgba(119,131,240, 0.6);
+    margin-top: 200px;
 }
 
 
 .servContent .writeUp{
-
     display: inline-flex;
     justify-content:space-between;
     width: 50%;
-    height: 500px;
-    
-}
 
-.servContent .writeUp h1{
-  width: 100%;
-  margin-left: 100px;
-  font-size: 55px;
-  font-weight: 800;
-  color: #303778;
-  font-family: 'League Spartan Variable';
 }
 .servContent .writeUp p{
   width: 100%;
-  margin-top: 130px;
-  margin-left: -400px;
-  font-size: 20px;
+  font-size: 24px;
+  color: #FFFFFF;
   font-family: "Sanchez";
-  font-weight: 400;
 }
 
 .servContent .servForm{
   padding-left: 70px;
+  padding-top: 50px;
   display: inline-flex;
   width: 40%;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1025px){
+  .servContent .writeUp p{
+    width: 80%;
+    padding-top: 60px;
+    margin-left: 10%;
+    font-size: 20px;
+  }
+
+  .serv .section01 .mainTxt{
+    transform: translateY(-0px);
+  }
+
+  .servContent .writeUp{
+    display: block;
+    width: 100%;
+  }
+  .servContent .servForm{
+    display: flex;
+    margin-left: 20px;
+    width: 80vw;
+    padding-left: 0px;
+    padding-top: 50px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .servContent .writeUp p{
+    width: 90%;
+    padding-top: 60px;
+    margin-left: 5%;
+    font-size: 18px;
+  }
+
+  .servContent .servForm{
+    display: flex;
+    justify-content: left;
+    justify-self: left;
+    margin-left: -40px;
+    width: 100vw;
+    padding-left: 0px;
+    padding-top: 50px;
+  }
 }
 
 .graphics{
@@ -109,7 +124,7 @@ text-align: center;
 }
 
 .graphics .blk img.tri-2{
-    z-index: 5;
+    z-index: 1;
     margin-right: -60px;
     height: 100px;
     margin-top:150px;
@@ -124,7 +139,7 @@ text-align: center;
 .graphics .blk .blkContent .blkHead{
     text-align: center;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 27px;
     font-weight: 800;
     font-family: 'League Spartan Variable';
     color: #303778;
@@ -139,6 +154,90 @@ text-align: center;
     font-weight: 400;
     font-family: 'Sanchez';
     color: #707172;
+}
+
+@media (max-width: 1025px){
+  .graphics{
+    position: relative;
+    display: block;
+    width: 70%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 15%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.graphics .blk{
+    display: flex;
+    z-index: -1;
+    width: 100%;
+    justify-content:center;
+    height: 300px;
+    background: white;
+    box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.graphics .blank-end{
+    width:100%;
+    height: 0px;
+    box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.55);
+}
+
+.graphics .blank-start{
+  position: absolute;
+  width:100%;
+  background-color: black;
+  height: 0px;
+  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.55);
+}
+
+.graphics .blk img.tri-1{
+  display: block;
+  position: absolute;
+  height: auto;
+  margin-top: 230px;
+  height: 100px;
+  transform: rotate(90deg);
+}
+
+.graphics .blk img.tri-2{
+    z-index: 2;
+    display: block;
+    margin-right: 0px;
+    position: absolute;
+    height: auto;
+    margin-top: 252px;
+    height: 70px;
+    transform: rotate(90deg);
+}
+
+.graphics .blk .blkContent{
+  display: block;
+    padding-top: 50px;
+    width: 100%;
+    margin-right: 25px;
+}
+
+.graphics .blk .blkContent .blkHead{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 27px;
+    font-weight: 800;
+    font-family: 'League Spartan Variable';
+    color: #303778;
+}
+
+.graphics .blk .blkContent .blkBdy{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Sanchez';
+    color: #707172;
+}  
 }
 
 
@@ -196,7 +295,7 @@ iframe {
     position: relative;
   width: 90%;
   margin-left: 50px;
-  background: rgba(119,131,240, 0.6);
+  background: rgba(51,67,224, 0.3);
   border-radius: 10px;
   overflow: hidden;
   display: -webkit-box;
@@ -211,7 +310,7 @@ iframe {
 }
 
 .contact1-form {
-  width: 390px;
+  width: 80%;
 }
 
 .contact1-form-title {
@@ -219,7 +318,7 @@ iframe {
   font-family: "League Spartan Variable";
   font-weight: 900;
   font-size: 35px;
-  color: #303778;
+  color: #ffffff;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 24px;
@@ -258,7 +357,7 @@ textarea.input1 + .shadow-input1 {
 
 .input1 {
   display: block;
-  width: 100%;
+  width: 100% ;
   background: #ffffff;
   font-family: Sanchez;
   font-size: 15px;
@@ -276,7 +375,7 @@ textarea.input1 + .shadow-input1 {
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 0px 0px;
-  color: rgba(48,55,120, 0.5);
+  color: rgba(0,0,0, 0.8);
 }
 
 .input1:focus + .shadow-input1 {
@@ -311,14 +410,15 @@ textarea.input1 + .shadow-input1 {
 
 .contact1-form-btn {
   min-width: 193px;
+  margin-left: 10%;
   height: 50px;
   border-radius: 25px;
-  background: #303778;
+  background: #feb848;
   font-family: "League Spartan Variable";
   font-size: 18px;
   font-weight: 800;
   line-height: 1.5;
-  color: #fff;
+  color: #303778;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -345,6 +445,7 @@ textarea.input1 + .shadow-input1 {
 
 .contact1-form-btn:hover {
   background: #333333;
+  color: #FFFFFF;
 }
 
 .contact1-form-btn:hover i {
@@ -369,7 +470,7 @@ textarea.input1 + .shadow-input1 {
 
 @media (max-width: 992px) {
   .container-contact1 {
-    padding: 90px 80px 88px 90px;
+    padding: 90px 80px 88px 0px;
   }
 
   .contact1-form {
@@ -379,17 +480,22 @@ textarea.input1 + .shadow-input1 {
 
 @media (max-width: 768px) {
   .container-contact1 {
-    padding: 90px 80px 88px 80px;
+    padding: 80px 80px 80px 0px;
   }
 
   .contact1-form {
-    width: 100%;
+    width: 80%;
   }
 }
 
 @media (max-width: 576px) {
   .container-contact1 {
-    padding: 90px 15px 88px 15px;
+    padding: 50px 50px 50px 0px;
+  }
+
+
+  .contact1-form {
+    width: 60vw;
   }
 }
 
@@ -460,3 +566,72 @@ textarea.input1 + .shadow-input1 {
     opacity: 1;
   }
 }
+
+
+.suggestions {
+  width: 100%;
+  background-color: #303778;
+}
+
+.suggestions .suggHd{
+  position: relative;
+  color: #FEB848;
+  margin-top: 50px;
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'League Spartan Variable';
+  width: 100%;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.suggestions .itms{
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 100px;
+}
+
+.suggestions .itms .itm{
+  display: inline-block;
+  background-color: rgba(255,255,255,0);
+  margin: 50px;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+.suggestions .itms .itm img{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255,255,255,0);
+  filter: drop-shadow(0.1rem 0.1rem 0.4rem rgba(0,0,0,0.4));
+  transition: all 0.2s ease-in;
+}
+
+.suggestions .itms .itm .itmBody{
+  height: 100%;
+  width: 100%;
+}
+
+.suggestions .itms .itm .itmBody a{
+  font-family: 'League Spartan Variable';
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 2;
+  font-weight: 600;
+  color: #FFFFFF;
+  filter: drop-shadow(0.1rem 0.1rem 0.4rem rgba(0,0,0,0.4));
+  margin-top: 70px;
+  width: 160px;
+  margin-left: 20px;
+  margin-right: 10%;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  font-size: 25px;
+}
+
+/* .suggestions .itms .itm .itmBody a:hover {
+  font-size: 27px;
+} */

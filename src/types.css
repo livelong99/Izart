@@ -1,4 +1,8 @@
 
+.types .section01 .mainTxt{
+    transform: translateY(-50px);
+}
+
 .darkBg{
     background-color: #303778;
     margin-top: 200px;
@@ -72,6 +76,10 @@
 
 
 @media (max-width: 1025px){
+
+    .types .section01 .mainTxt{
+        transform: translateY(0px);
+    }
 
     .stCont .boxT{
         border-radius: 10px;

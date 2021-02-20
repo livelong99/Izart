@@ -4,17 +4,36 @@ import './serv.css';
 import React, {useEffect, useRef, useState} from 'react';
 import NavigationBar from "./navigationBar.jsx"
 import Footer from "./Footer";
+import OurWork from "./ourWork"
 import Form from "./form"
 import dimensions from "./Dimensions";
 
 const Service = () => {
 
-    const write = useRef(null);
+    const hovI1 = useRef(null);
+    const hovI2 = useRef(null);
+    const hovI3 = useRef(null);
+    const hovI4 = useRef(null);
     const frm = useRef(null);
+
+    const sugHov = (e) => {
+      e.current.childNodes[1].childNodes[0].style.fontSize = "28px";
+      e.current.childNodes[1].childNodes[0].style.marginLeft = "25px";
+      e.current.childNodes[0].style.width= "220px";
+      e.current.childNodes[0].style.height= "220px";
+      console.log(e.current.childNodes[1].childNodes[0].style.fontSize);
+    }
+
+    const sugHovN = (e) => {
+      e.current.childNodes[1].childNodes[0].style.fontSize = "25px";
+      e.current.childNodes[1].childNodes[0].style.marginLeft = "20px";
+      e.current.childNodes[0].style.width= "200px";
+      e.current.childNodes[0].style.height= "200px";
+    }
 
     const formfunc = () => {
         return(
-            <div ref={frm} class="container-contact1">
+            <div class="container-contact1">
                 <form class="contact1-form validate-form">
                     <span class="contact1-form-title">
                         Contact Us
@@ -61,32 +80,34 @@ const Service = () => {
 
 
     return(
-        <div>
-            
-            <div class="headServ"></div>
-            <div class="home">
-            <div class="heading">
-                Article Writing
-              </div>
-              <div class="backimg">
-              </div>
-            </div>
+        <div class="serv">
+          <div class="section01">
+          <div class="mainTxt">
+          <div class="headone">
+            <p>Article Writing</p>
+          </div>
+          <div class="subhead">
+            <p>When you have your content strategy and you just need an executioner.</p>
+          </div>
+          </div>
+          <div class="mainIll"><img src="Images/Services/article.svg" /></div>
+        </div>
+        <div class="darkBg">
             <div class="servContent">
-                <div ref={write} class="writeUp">
-                <h1 >Facebook</h1>
+                <div class="writeUp">
+<p>Facebook has over 2.45 BILLION Monthly users. How many of them are your brand’s consumers? <br />
 
-<p>Facebook has over 2.45 BILLION Monthly users. How many of them are your brand’s consumers?
+What if we tell you that you can beat your <i>competition and increase your revenues</i> tenfold by just investing in a good Social Media Content Strategy and creating content regularly. <br /><br />
 
-What if we tell you that you can beat your competition and increase your revenues tenfold by just investing in a good Social Media Content Strategy and creating content regularly.
+Want to know how we can do it for you?<br />
 
-Want to know how we can do it for you?
+At Izart, we create content that is carefully structured, methodically curated, and strategically promoted. We use data driven insights to understand your audience. We then position your brand via content in such a way that potential prospects discover you and not the other way around.<br />
 
-At Izart, we create content that is carefully structured, methodically curated, and strategically promoted. We use data driven insights to understand your audience. We then position your brand via content in such a way that potential prospects discover you and not the other way around.
-
-Our content converts idle readers to active consumers. So fill out the form, and let us increase your brand’s revenue right now!
+Our content converts idle readers to active consumers. So fill out the form, and let us increase your brand’s revenue right now!<br />
 </p></div>
                 <div class="servForm">
                     {formfunc()}
+                </div>
                 </div>
                 </div>
                 <div class="graphics">
@@ -94,8 +115,8 @@ Our content converts idle readers to active consumers. So fill out the form, and
                     </div>
                     <div class="blk">
                         <div class="blkContent">
-                            <div class="blkHead"><p>Header</p></div>
-                            <div class="blkBdy"><p>id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut </p></div>
+                            <div class="blkHead"><p>INITIATE</p></div>
+                            <div class="blkBdy"><p>Our Delivery Executive gets on a quick call with you, understands your requirements, and allocates a Content Strategist for your brand. </p></div>
 
                         </div>
                         <img class="tri-2" src="Images/triangle02.svg" />
@@ -103,8 +124,8 @@ Our content converts idle readers to active consumers. So fill out the form, and
                     </div>
                     <div class="blk">
                         <div class="blkContent">
-                            <div class="blkHead"><p>Header</p></div>
-                            <div class="blkBdy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p></div>
+                            <div class="blkHead"><p>RECON</p></div>
+                            <div class="blkBdy"><p>Our Content Strategist gets on a call with you. They brainstorm on ideas with you and finalize a plan of action that will serve you the best. </p></div>
 
                         </div>
                         <img class="tri-2" src="Images/triangle02.svg" />
@@ -112,123 +133,53 @@ Our content converts idle readers to active consumers. So fill out the form, and
                     </div>
                     <div class="blk">
                         <div class="blkContent">
-                            <div class="blkHead"><p>Header</p></div>
-                            <div class="blkBdy"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p></div>
+                            <div class="blkHead"><p>EXECUTION</p></div>
+                            <div class="blkBdy"><p>Sit back and relax. Our team of writers are now working on your requirement and will provide the final deliverable right on time.</p></div>
                         </div>
                         <img class="tri-2" src="Images/triangle02.svg" />
                         <img class="tri-1" src="Images/triangle.svg" />
                     </div>
                     <div class="blk">
                         <div class="blkContent">
-                            <div class="blkHead"><p>Header</p></div>
-                            <div class="blkBdy"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p></div>
+                            <div class="blkHead"><p>CURATION </p></div>
+                            <div class="blkBdy"><p>Have some edits? Great! We love editing. Send your comments to our first draft and we will edit it in no time.</p></div>
                         </div>
                         <img class="tri-2" src="Images/triangle02.svg" />
                         <img class="tri-1" src="Images/triangle.svg" />
                     </div>
                     <div class="blk">
                         <div class="blkContent">
-                            <div class="blkHead"><p>Header</p></div>
-                            <div class="blkBdy"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p></div>
+                            <div class="blkHead"><p>IT’S A WRAP</p></div>
+                            <div class="blkBdy"><p>Publish the final content and see your inbound traffic, leads, and revenues grow exponentially.</p></div>
                         </div>
                         <img class="tri-2" src="Images/triangle02.svg" />
                         <img class="tri-1" src="Images/triangle.svg" />
                     </div>
-                    <div class="blank-start"></div>
+                    <div class="blank-end"></div>
 
                 </div>
-            <div class="testimonials">
-              <div class="inner">
-                <h1>Articles</h1>
-                <div class="border"></div>
-                <div class="row1">
-                  <div class="colind">
+            <div class="suggestions">
+              <div class="suggHd"><p>Articles</p></div>
+              <div class="itms">
+                <div ref={hovI1} onMouseEnter={() => {sugHov(hovI1)}} onMouseLeave={() => {sugHovN(hovI1)}} class="itm"><img id="sgI" src="Images/suggestion.svg"/><div class="itmBody">
+                  <a href="#">SEO <br/>Writing</a>  
+                  </div>
                 </div>
-
-                  <div class="col">
-                    <div class="testimonial">
-                      <img src="Images/seo.jpg" width="512" height="512" alt="" />
-                      <div class="name">SEO writing</div>
-                    </div>
+                <div ref={hovI2} onMouseEnter={() => {sugHov(hovI2)}} onMouseLeave={() => {sugHovN(hovI2)}} class="itm"><img id="sgI" src="Images/suggestion.svg"/><div class="itmBody">
+                  <a href="#">Product Article</a>  
                   </div>
-
-                  <div class="col">
-                    <div class="testimonial">
-                      <img src="Images/articleback.jpg" alt="" />
-                      <div class="name">Product Article</div>
-                    </div>
+                </div>
+                <div ref={hovI3} onMouseEnter={() => {sugHov(hovI3)}} onMouseLeave={() => {sugHovN(hovI3)}} class="itm"><img id="sgI" src="Images/suggestion.svg"/><div class="itmBody">
+                  <a href="#">Informative Article</a>  
                   </div>
-
-                  <div class="col">
-                    <div class="testimonial">
-                      <img src="Images/informative.jpg" alt="" />
-                      <div class="name">Informative Article</div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="testimonial">
-                      <img src="Images/technical.jpg" alt="" />
-                      <div class="name">Technical Articles</div>
-                    </div>
+                </div>
+                <div ref={hovI4} onMouseEnter={() => {sugHov(hovI4)}} onMouseLeave={() => {sugHovN(hovI4)}} class="itm"><img id="sgI" src="Images/suggestion.svg"/><div class="itmBody">
+                  <a href="#">Technical Article</a>  
                   </div>
                 </div>
               </div>
             </div>
-            <div class="OuterDiv">
-            <div class="section03">
-              <div class="Box-l"><p>Our Work</p>  <svg preserveAspectRatio="none" viewBox="-5 -5 406 10" class="line2"><path d="M 0 0 L 396 0"  /></svg>  </div>
-              <div className="Box-r white-bg"></div>
-              <div className="Box-l white-bg"></div>
-              <div className="Box-r white-bg"></div>
-               {/*<div className="Box-r"><div data-aos-delay="1000" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1000" class="button-cont black-bg"><div class="btnText">see more</div></div></div> */}
-            </div>
-            <div class="blogrow">
-            <div class="containerforourwork">
-              <div class="headOurWork">
-                Blog
-              </div>
-              <div class="subheadWork">
-                Latest blogs from izart works
-              </div>
-              <div class="readmore1">
-                Read more
-              </div>
-            </div>
-            <div class="containerforourwork">
-            <div class="headOurWork">
-              Whitepaper
-            </div>
-            <div class="subheadWork">
-              Latest whitepaper from izart works
-            </div>
-            <div class="readmore1">
-              Read more
-            </div>
-            </div>
-            <div class="containerforourwork">
-            <div class="headOurWork">
-              Case Study
-            </div>
-            <div class="subheadWork">
-              Latest case study from izart works
-            </div>
-            <div class="readmore1">
-              Read more
-            </div>
-            </div>
-            <div class="containerforourwork">
-            <div class="headOurWork">
-              Article
-            </div>
-            <div class="subheadWork">
-              Latest Article from izart works
-            </div>
-            <div class="readmore1">
-              Read more
-            </div>
-            </div>
-            </div>
-            </div>
+            <OurWork />
         </div>
     )
 }
