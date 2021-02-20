@@ -54,7 +54,7 @@ a{
 .section01 .mainTxt{
   display: inline-block;
   width: 60%;
-  height: 400px;
+  height: 500px;
 }
 
 .section01 .mainIll{
@@ -156,7 +156,7 @@ a{
 .section02H1{
   position: relative;
   color: #303778;
-  padding-top: 50px;
+  margin-top: 300px;
   text-align: center;
   font-family: 'League Spartan Variable';
   width: 100%;
@@ -169,7 +169,7 @@ a{
 .section02H{
   position: relative;
   color: #FEB848;
-  margin-top: 300px;
+  margin-top: 50px;
   padding-top: 50px;
   text-align: center;
   font-family: 'League Spartan Variable';

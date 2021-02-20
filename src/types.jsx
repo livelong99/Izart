@@ -8,7 +8,6 @@ import dimensions from "./Dimensions";
 const Types = () => {
     return(
         <div>
-            <NavigationBar />
             <div class="section01">
           <div class="mainTxt">
           <div class="headone">
@@ -52,8 +51,6 @@ const Types = () => {
                 </div>
             </div>
             </div>
-            
-            <Footer />
         </div>
     )
 }
