@@ -73,8 +73,7 @@ a{
 }
 
 
-
-.section01 .mainTxt .headone{
+.headone{
   display:inline-block;
   color: #303778;
   margin-top: 180px;
@@ -87,7 +86,7 @@ a{
   font-weight: 900;
 }
 
-.section01 .mainTxt .subhead{
+.subhead{
   display:inline-block;
   color: rgba(0, 0, 0, 0.75);
   text-align: left;
@@ -157,7 +156,6 @@ a{
 .section02H1{
   position: relative;
   color: #303778;
-  margin-top: 300px;
   padding-top: 50px;
   text-align: center;
   font-family: 'League Spartan Variable';

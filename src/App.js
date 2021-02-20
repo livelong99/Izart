@@ -2,11 +2,8 @@
 import './App.css';
 import './App1.css';
 import React, {useEffect, useRef, useState} from 'react';
-import Typical from "react-typical";
+import Types from "./types"
 import NavigationBar from "./navigationBar.jsx"
-import ThreeC from "./threeC";
-import OurWork from "./ourWork";
-import Testimonials from "./Testimonials";
 import Footer from "./Footer";
 import dimensions from "./Dimensions";
 import Home from "./Home"
@@ -40,6 +37,7 @@ const App = () => {
       <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/services" component={Services} />
+          <Route path="/types" component={Types} />
         </Switch>
       </Router>
       <a data-aos="fade-up" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+919319150688"><img src="Images/whatsapp.svg" /></a>
