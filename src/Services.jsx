@@ -50,7 +50,7 @@ const Service = () => {
         <div>
             <div class="servContent">
                 <div class="writeUp">
-                  <img src="Images/wrBg.svg" />
+                  {/* <img src="Images/wrBg.svg" /> */}
 <p><br/><b>F</b>acebook has over 2.45 BILLION Monthly users. How many of them are your brand’s consumers? <br />
 
 What if we tell you that you can beat your <i>competition and increase your revenues</i> tenfold by just investing in a good Social Media Content Strategy and creating content regularly. <br /><br />

@@ -14,6 +14,7 @@ export default function NavigationBar() {
     const meg01 = useRef(null);
     const meg02 = useRef(null);
     const navBg = useRef(null);
+    var n = 0;
 
     function setMenu(){
         if(mainMen == 0){
@@ -51,8 +52,11 @@ export default function NavigationBar() {
 
 
     useEffect(() => {
-        if(width>970)
+        if(n==0 && width>970){
+            n = 1
             setMenu();
+        }
+            
     })
 
 

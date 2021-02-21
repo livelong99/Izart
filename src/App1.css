@@ -14,6 +14,7 @@
 
   .section01{
     padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   .section01 .mainTxt{
@@ -28,8 +29,9 @@
   }
 
   .section01 .mainIll img{
-    margin-top: 100px;
-    margin-left: 15%;
+    margin-top: 0px;
+    margin-left: 50%;
+    transform: translateX(-50%);
     height: 100%;
   }
 
@@ -51,14 +53,15 @@
     text-align: center;
   }
 
-  .section02H{
-    margin-top: 550px;
+  .section02H, .section02H1{
+    margin-top: 100px;
     margin-bottom: -70px;
-    font-size: 55px; 
+    font-size: 60px; 
   }
 
   .section02{
     width: 90%;
+    margin-bottom: 10px;
   }
 
   .section02 .service{
@@ -68,7 +71,7 @@
   .section02 .service .content{
     width: 100%;
     margin-top: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   .section02 .service .content .head,
@@ -156,7 +159,7 @@
   .steps .sIllus img{
     height: 250px;
     margin-top: 50px;
-    margin-left: 20px;
+    transform: translateX(8vw);
   }
 
   .testimonials .inner h1{
@@ -211,9 +214,7 @@
   }
 
   .section01 .mainIll img{
-    margin-top: -100px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-top: -80px;
     height: 100%;
   }
 
@@ -252,6 +253,16 @@
     margin-top: -50px;
     width: 100%;
     margin-left: 30px;
+  }
+
+  .steps .sIllus{
+    width: 100vw;
+  }
+
+  .steps .sIllus img{
+    width: 80vw;
+    margin-top: 50px;
+    transform: translateX(-20vw);
   }
 
   .OuterDiv{
