@@ -16,6 +16,7 @@ const Types = () => {
           <div class="subhead">
             <p>When you have your content strategy and you just need an executioner.</p>
           </div>
+          <div class="extra"></div>
           </div>
           <div class="mainIll"><img src="Images/ser-2.svg" /></div>
         </div>

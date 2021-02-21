@@ -211,7 +211,7 @@
   }
 
   .section01 .mainIll img{
-    margin-top: 4vh;
+    margin-top: -100px;
     margin-left: 50%;
     transform: translateX(-50%);
     height: 100%;
@@ -233,7 +233,8 @@
   }
 
   .section02H{
-    margin-top: 300px; 
+    margin-top: 30px;
+    margin-bottom: 50px; 
   }
 
   .section02 .service .content .more{

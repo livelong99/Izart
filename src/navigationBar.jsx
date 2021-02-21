@@ -197,10 +197,10 @@ export default function NavigationBar() {
                     </div>
                     <div class="row">
                         <ul class="mega-links">
-                        <li onClick={() => setServ(1)} ><a href="#">{ serv==1 ? <b>Article Writing</b> : "Article Writing" }</a></li>
-                        <li onClick={() => setServ(2)}><a href="#">{ serv==2 ? <b>Social Media Content</b> : "Social Media Content" }</a></li>
-                        <li onClick={() => setServ(3)}><a href="#">{ serv==3 ? <b>Blog Writing</b> : "Blog Writing" }</a></li>
-                        <li onClick={() => setServ(4)}><a href="#">{ serv==4 ? <b>Academics</b> : "Academics" }</a></li>
+                        <li onClick={() => setServ(1)} ><a href="#">{ serv==1 ? <b>Article Writing</b> : "Article Writing" }</a>{ serv==1 ? <img src="Images/serArr.svg"/> : null }</li>
+                        <li onClick={() => setServ(2)}><a href="#">{ serv==2 ? <b>Social Media Content</b> : "Social Media Content" }</a>{ serv==2 ? <img src="Images/serArr.svg"/> : null }</li>
+                        <li onClick={() => setServ(3)}><a href="#">{ serv==3 ? <b>Blog Writing</b> : "Blog Writing" }</a>{ serv==3 ? <img src="Images/serArr.svg"/> : null }</li>
+                        <li onClick={() => setServ(4)}><a href="#">{ serv==4 ? <b>Academics</b> : "Academics" }</a>{ serv==4 ? <img src="Images/serArr.svg"/> : null }</li>
                         </ul>
                     </div>
                     {ServiceBox()} 

@@ -40,6 +40,7 @@ const Home = () => {
 
   return (
     <div>
+      <div class="land">
         <div ref={oneRef} class="section01">
           <div class="mainTxt">
           <div class="headone">
@@ -52,6 +53,8 @@ const Home = () => {
           <div data-aos="fade-zoom-out" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="subhead">
             <p>We scale up business’s revenues by writing content that sells.</p>
           </div>
+          
+          <div class="extra"></div>
           </div>
 
           <div class="mainIll"><img src="Images/homeS.svg" /></div>
@@ -59,6 +62,7 @@ const Home = () => {
             <a href="#"><div data-aos="fade-zoon-out" data-aos-delay="3000" dat-aos-offset="100" data-aos-duration="1000" class="leftB"><div class="btnText">Let's Talk</div></div></a>
             <a href="#"><div data-aos="fade-zoon-out" data-aos-delay="3000" dat-aos-offset="10  0" data-aos-duration="1000" class="rightB"><div  class="btnText">Let's Start</div></div></a>
           </div> */}
+        </div>
         </div>
         <div class="section02H1">
           <p>Our Service Types</p>

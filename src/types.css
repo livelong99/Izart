@@ -1,13 +1,21 @@
 
-.types .section01 .mainTxt{
-    transform: translateY(-50px);
+.types .section01{
+    margin-bottom: 0px;
+}
+
+.types .section01 .mainTxt .headone{
+    color: #303778;
+}
+
+.types .section01 .mainTxt .subhead{
+    color: rgba(0,0,0,0.5);
 }
 
 .darkBg{
     background-color: #303778;
-    margin-top: 200px;
     z-index: -2;
 }
+
     
 
 .infoT{

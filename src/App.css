@@ -42,6 +42,11 @@ a{
   margin: 15px 35px;
 }
 
+.land{
+  z-index: -1;
+  background-color: #303778;
+  width: 100%;
+}
 
 
 .section01{
@@ -49,23 +54,26 @@ a{
   width: 80%;
   left: 10%;
   padding-top: 200px;
-  z-index: -1;
+  z-index: -0.8;
 }
 
 .section01 .mainTxt{
   display: inline-block;
   position: relative;
-  width: 60%;
+  width: 65%;
+  margin-bottom: 100px;
+  height: 50%;
 }
 
 .section01 .mainIll{
   display: inline-block;
   animation: blinker 1s linear 3;
-  width: 40%;
+  width: 35%;
   transition: all 0.7s ease-in;
 }
 
 .section01 .mainIll img{
+  width: 100%;
   transition: all 0.3s ease-in;
 }
 
@@ -73,30 +81,36 @@ a{
 .headone{
   display:inline-block;
   align-items: center;
-  color: #303778;
+  color: #FFFFFF;
   text-align: left;
   font-family: 'League Spartan Variable';
-  width: 90%;
-  font-size: 70px;
+  width: 100%;
+  font-size: 60px;
   font-style: normal;
   line-height: 80px;
   font-weight: 900;
 }
 
+.extra{
+  display:inline-block;
+  height: 80px;
+  width:100%;
+}
+
 .subhead{
   display:inline-block;
-  color: rgba(0, 0, 0, 0.7);
+  color: #FEB848;
   text-align: left;
   font-family: "Ubuntu Mono";
   width: 100%;
   font-size: 25px;
-  padding-top: 00px;
   top: 0px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .subhead p{
+  margin-top:-60px;
   margin-right: 20%;
 }
 
@@ -153,7 +167,6 @@ a{
 .section02H1{
   position: relative;
   color: #303778;
-  margin-top: 300px;
   text-align: center;
   font-family: 'League Spartan Variable';
   width: 100%;
@@ -166,7 +179,6 @@ a{
 .section02H{
   position: relative;
   color: #FEB848;
-  margin-top: 50px;
   padding-top: 50px;
   text-align: center;
   font-family: 'League Spartan Variable';

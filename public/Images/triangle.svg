@@ -1,9 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="158" height="409" viewBox="0 0 158 409">
-  <defs>
-    <radialGradient id="radial-gradient" cx="0.5" cy="1" r="1.494" gradientTransform="matrix(0.258, -0.966, 0.308, 0.082, 0.063, 1.401)" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#feb848"/>
-      <stop offset="1" stop-color="#d6993b"/>
-    </radialGradient>
-  </defs>
-  <path id="triangle" d="M204.5,0,409,158H0Z" transform="translate(0 409) rotate(-90)" fill="url(#radial-gradient)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="158" height="409" viewBox="0 0 158 409">
+  <path id="triangle" d="M204.5,0,409,158H0Z" transform="translate(158) rotate(90)" fill="#feb848"/>
 </svg>

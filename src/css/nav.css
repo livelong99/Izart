@@ -9,7 +9,7 @@
 
 nav{
   position: fixed;
-  z-index: 3;
+  z-index: 10;
   width: 100%;
   box-shadow: 0px 3px 6px rgba(21, 21, 21, 0.41);
   background: rgba(255,255,255,0.8);
@@ -259,6 +259,14 @@ nav .wrapper{
   color: #303778;
   font-size: 20px;
   display: block;
+}
+
+.row .mega-links li img{
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 23%;
+  height: 25px;
+  width: auto;
 }
 .row .mega-links li a:hover{
   color: #303778;
