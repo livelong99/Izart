@@ -508,7 +508,8 @@
       "link": "blog",
       "title": "Blog Writing",
       "subHead": "Drive Conversions and build long term relationships with your consumers through our premium blog writing service. ",
-      "illus": "blogs.svg"
+      "illus": "blogs.svg",
+      "sugg":[]
 
   },
   {
@@ -523,7 +524,8 @@
     "link": "whitepaper",
     "title": "White Papers",
     "subHead": "Position yourself as an Industry Leader today. Get the best writers to write Accurate, In-depth, and Persuasive whitepapers.",
-    "illus": "whitepaper.svg"
+    "illus": "whitepaper.svg",
+    "sugg":[]
 
 }
   
