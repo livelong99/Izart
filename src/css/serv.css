@@ -736,14 +736,16 @@ textarea.input1 + .shadow-input1 {
 }
 
 .suggestions .itms .itm .itmBody a{
+  display: block;
   font-family: 'League Spartan Variable';
-  position: absolute;
+  position: relative;
   text-transform: uppercase;
+  margin-top: 50%;
+  transform: translateY(-50%);
   z-index: 2;
   font-weight: 600;
   color: #FFFFFF;
   filter: drop-shadow(0.1rem 0.1rem 0.4rem rgba(0,0,0,0.4));
-  margin-top: 70px;
   width: 160px;
   margin-left: 20px;
   margin-right: 10%;

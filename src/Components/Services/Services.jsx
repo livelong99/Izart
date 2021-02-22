@@ -4,6 +4,9 @@
 import React, {useRef} from 'react';
 import OurWork from "../Home/ourWork";
 import Form from "./form";
+import {
+  Link
+} from "react-router-dom";
 
 // return(<><br/>{line}<br/></>);
 
@@ -114,22 +117,34 @@ const Service = ({data}) => {
             <div class="suggestions">
               <div class="suggHd"><p>Articles</p></div>
               <div class="itms">
-                <div ref={hovI1} onMouseEnter={() => {sugHov(hovI1)}} onMouseLeave={() => {sugHovN(hovI1)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div class="itmBody">
-                  <a href="#">SEO <br/>Writing</a>  
-                  </div>
-                </div>
-                <div ref={hovI2} onMouseEnter={() => {sugHov(hovI2)}} onMouseLeave={() => {sugHovN(hovI2)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div class="itmBody">
-                  <a href="#">Product Article</a>  
-                  </div>
-                </div>
-                <div ref={hovI3} onMouseEnter={() => {sugHov(hovI3)}} onMouseLeave={() => {sugHovN(hovI3)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div class="itmBody">
-                  <a href="#">Informative Article</a>  
-                  </div>
-                </div>
-                <div ref={hovI4} onMouseEnter={() => {sugHov(hovI4)}} onMouseLeave={() => {sugHovN(hovI4)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div class="itmBody">
-                  <a href="#">Technical Article</a>  
-                  </div>
-                </div>
+                {data.sugg.map(sg => {
+                  if(sg.ino == 1){
+                    return(
+                      <div ref={hovI1} onMouseEnter={() => {sugHov(hovI1)}} onMouseLeave={() => {sugHovN(hovI1)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div onClick={() => { document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="itmBody">
+                      <Link to={"/services/" + sg.link}>{sg.title}</Link>  
+                      </div>
+                  </div>)
+                  }
+                  else if(sg.ino == 2){
+                    return(<div ref={hovI2} onMouseEnter={() => {sugHov(hovI2)}} onMouseLeave={() => {sugHovN(hovI2)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div onClick={() => { document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="itmBody">
+                    <Link to={"/services/" + sg.link}>{sg.title}</Link>  
+                    </div>
+                  </div>)
+
+                  }
+                  else if(sg.ino == 3){
+                    return(<div ref={hovI3} onMouseEnter={() => {sugHov(hovI3)}} onMouseLeave={() => {sugHovN(hovI3)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div onClick={() => { document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="itmBody">
+                    <Link to={"/services/" + sg.link}>{sg.title}</Link>  
+                    </div>
+                  </div>)
+                  }
+                  else{
+                    return(<div ref={hovI4} onMouseEnter={() => {sugHov(hovI4)}} onMouseLeave={() => {sugHovN(hovI4)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div onClick={() => { document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="itmBody">
+                    <Link to={"/services/" + sg.link}>{sg.title}</Link>
+                    </div>
+                  </div>)
+                  }
+                })}
               </div>
             </div>
             <OurWork />

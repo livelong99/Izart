@@ -10,16 +10,19 @@
       "title": "Facebook",
       "subHead": "Facebook has over 2.45 BILLION monthly users. How many of them are your brand’s consumers?",
       "illus": "social.svg",
-      "sugg": [
+      "sugg":[
         {
-        "link": "twitter",
-        "title": "Twitter"
+          "ino": 1,
+          "link": "twitter",
+          "title": "Twitter"
         },
         {
+          "ino": 2,
           "link": "linkedin",
           "title": "LinkedIn"
         },
         {
+          "ino": 3,
           "link": "instagram",
           "title": "Instagram"
         }
@@ -36,16 +39,19 @@
       "title": "Twitter",
       "subHead": "Will you believe us if we told you that by just writing 280 characters we can scale up your business? ",
       "illus": "social.svg",
-      "sugg": [
+      "sugg":[
         {
-        "link": "twitter",
-        "title": "Twitter"
+          "ino": 1,
+          "link": "facebook",
+          "title": "Facebook"
         },
         {
+          "ino": 2,
           "link": "linkedin",
           "title": "LinkedIn"
         },
         {
+          "ino": 3,
           "link": "instagram",
           "title": "Instagram"
         }
@@ -61,16 +67,19 @@
       "title": "LinkedIn",
       "subHead": "In the corporate ecosystem, LinkedIn is nothing less than a goldmine ",
       "illus": "social.svg",
-      "sugg": [
+      "sugg":[
         {
-        "link": "twitter",
-        "title": "Twitter"
+          "ino": 1,
+          "link": "twitter",
+          "title": "Twitter"
         },
         {
-          "link": "linkedin",
-          "title": "LinkedIn"
+          "ino": 2,
+          "link": "facebook",
+          "title": "Facebook"
         },
         {
+          "ino": 3,
           "link": "instagram",
           "title": "Instagram"
         }
@@ -86,18 +95,21 @@
     "title": "Instagram",
     "subHead": "Gone are the days when Instagram was just a photo sharing platform. Over the years, Instagram has transformed into one of the biggest online marketplaces. ",
     "illus": "social.svg",
-    "sugg": [
+    "sugg":[
       {
-      "link": "twitter",
-      "title": "Twitter"
+        "ino": 1,
+        "link": "twitter",
+        "title": "Twitter"
       },
       {
+        "ino": 2,
         "link": "linkedin",
         "title": "LinkedIn"
       },
       {
-        "link": "instagram",
-        "title": "Instagram"
+        "ino": 3,
+        "link": "facebook",
+        "title": "Facebook"
       }
     ]
   },
@@ -111,7 +123,8 @@
     "link": "technical+writing",
     "title": "Technical Writing",
     "subHead": "Position yourself as an Industry Leader by publishing content that is better than everyone else. ",
-    "illus": "tecWriting.svg"
+    "illus": "tecWriting.svg",
+    "sugg":[]
   },
   {
     "body": [
@@ -125,7 +138,8 @@
     "link": "copywriting",
     "title": "Copy Writing",
     "subHead": "Average attention span of a human being is 8 seconds. Does your content capture their attention quicker than that? ",
-    "illus": "copywritting.svg"
+    "illus": "copywritting.svg",
+    "sugg":[]
   },
   {
     "body":[
@@ -139,7 +153,8 @@
     "link": "website+content",
     "title": "Website Content",
     "subHead": "Convert your website to a lead conversion engine by using content that’s better than the rest. ",
-    "illus": "webContent.svg"
+    "illus": "webContent.svg",
+    "sugg":[]
   },
   {
     "body":[
@@ -152,18 +167,26 @@
     "title": "Cover Letter",
     "subHead": "Hire the best writers to write your story for you. ",
     "illus": "academics.svg",
-    "sugg": [
+    "sugg":[
       {
-      "link": "twitter",
-      "title": "Twitter"
+        "ino": 1,
+        "link": "lor",
+        "title": "LOR"
       },
       {
-        "link": "linkedin",
-        "title": "LinkedIn"
+        "ino": 2,
+        "link": "sop",
+        "title": "SOP"
       },
       {
-        "link": "instagram",
-        "title": "Instagram"
+        "ino": 3,
+        "link": "resume",
+        "title": "Resume & CV"
+      },
+      {
+        "ino": 4,
+        "link": "research+paper",
+        "title": "Research Paper"
       }
     ]
   },
@@ -176,7 +199,29 @@
     "link": "resume",
     "title": "Resume & CV",
     "subHead": "One page to change your life. Hire the best writers to stand out!",
-    "illus": "academics.svg"
+    "illus": "academics.svg",
+    "sugg":[
+      {
+        "ino": 1,
+        "link": "lor",
+        "title": "LOR"
+      },
+      {
+        "ino": 2,
+        "link": "sop",
+        "title": "SOP"
+      },
+      {
+        "ino": 3,
+        "link": "cover+letter",
+        "title": "Cover Letter"
+      },
+      {
+        "ino": 4,
+        "link": "research+paper",
+        "title": "Research Paper"
+      }
+    ]
   },
   {
     "body":[
@@ -187,7 +232,29 @@
     "link": "research+paper",
     "title": "Research Paper",
     "subHead": "Get the recognition your research deserves. ",
-    "illus": "academics.svg"
+    "illus": "academics.svg",
+    "sugg":[
+      {
+        "ino": 1,
+        "link": "lor",
+        "title": "LOR"
+      },
+      {
+        "ino": 2,
+        "link": "sop",
+        "title": "SOP"
+      },
+      {
+        "ino": 3,
+        "link": "resume",
+        "title": "Resume & CV"
+      },
+      {
+        "ino": 4,
+        "link": "cover+letter",
+        "title": "Cover Letter"
+      }
+    ]
   },
   {
     "body":[
@@ -198,7 +265,29 @@
     "link": "sop",
     "title": "Statement Of Purpose (SOP)",
     "subHead": "Few words stand between you and your dream college. Hire the BEST academic writers to help you write the ones that guarantee your admission.  ",
-    "illus": "academics.svg"
+    "illus": "academics.svg",
+    "sugg":[
+      {
+        "ino": 1,
+        "link": "lor",
+        "title": "LOR"
+      },
+      {
+        "ino": 2,
+        "link": "cover+letter",
+        "title": "Cover Letter"
+      },
+      {
+        "ino": 3,
+        "link": "resume",
+        "title": "Resume & CV"
+      },
+      {
+        "ino": 4,
+        "link": "research+paper",
+        "title": "Research Paper"
+      }
+    ]
   },
   {
     "body":[
@@ -209,7 +298,29 @@
     "link": "lor",
     "title": "Letter Of Recommendation (LOR)",
     "subhead": "",
-    "illus": "academics.svg"
+    "illus": "academics.svg",
+    "sugg":[
+      {
+        "ino": 1,
+        "link": "cover+letter",
+        "title": "Cover Letter"
+      },
+      {
+        "ino": 2,
+        "link": "sop",
+        "title": "SOP"
+      },
+      {
+        "ino": 3,
+        "link": "resume",
+        "title": "Resume & CV"
+      },
+      {
+        "ino": 4,
+        "link": "research+paper",
+        "title": "Research Paper"
+      }
+    ]
   },
   {
     "body":[
@@ -225,7 +336,29 @@
     "link": "articles",
     "title": "Articles",
     "subHead": "Convert passive readers to active consumers with premium Articles. ",
-    "illus": "article.svg"
+    "illus": "article.svg",
+    "sugg":[
+      {
+        "ino": 1,
+        "link": "seo",
+        "title": "SEO Articles"
+      },
+      {
+        "ino": 2,
+        "link": "informative+articles",
+        "title": "Informative Articles"
+      },
+      {
+        "ino": 3,
+        "link": "product+based",
+        "title": "Product Based Articles"
+      },
+      {
+        "ino": 4,
+        "link": "technical+articles",
+        "title": "Technical Articles"
+      }
+    ]
   },
   {
     "body":[
@@ -238,7 +371,29 @@
     "link": "seo",
     "title": "SEO Articles",
     "subHead": "Get your content discovered by our premium onsite SEO Optimization ",
-    "illus": "article.svg"
+    "illus": "article.svg",
+    "sugg":[
+      {
+        "ino": 1,
+        "link": "articles",
+        "title": "Articles"
+      },
+      {
+        "ino": 2,
+        "link": "informative+articles",
+        "title": "Informative Articles"
+      },
+      {
+        "ino": 3,
+        "link": "product+based",
+        "title": "Product Based Articles"
+      },
+      {
+        "ino": 4,
+        "link": "technical+articles",
+        "title": "Technical Articles"
+      }
+    ]
   },
   {
     "body":[
@@ -250,7 +405,29 @@
     "link": "technical+articles",
     "title": "Technical Articles",
     "subHead": "Emerge as an Industry leader and scale up your business through articles that inform but also sell! ",
-    "illus": "article.svg"
+    "illus": "article.svg",
+    "sugg":[
+      {
+        "ino": 1,
+        "link": "seo",
+        "title": "SEO Articles"
+      },
+      {
+        "ino": 2,
+        "link": "informative+articles",
+        "title": "Informative Articles"
+      },
+      {
+        "ino": 3,
+        "link": "product+based",
+        "title": "Product Based Articles"
+      },
+      {
+        "ino": 4,
+        "link": "articles",
+        "title": "Articles"
+      }
+    ]
   },
   {
     "body":[
@@ -261,7 +438,29 @@
     "link": "informative+articles",
     "title": "Informative Articles",
     "subHead": "Provide value to your readers, build a reputable brand, and scale up your business. ",
-    "illus": "article.svg"
+    "illus": "article.svg",
+    "sugg":[
+      {
+        "ino": 1,
+        "link": "seo",
+        "title": "SEO Articles"
+      },
+      {
+        "ino": 2,
+        "link": "articles",
+        "title": "Articles"
+      },
+      {
+        "ino": 3,
+        "link": "product+based",
+        "title": "Product Based Articles"
+      },
+      {
+        "ino": 4,
+        "link": "technical+articles",
+        "title": "Technical Articles"
+      }
+    ]
   },
   {
     "body":[
@@ -275,7 +474,29 @@
     "link": "product+based",
     "title": "Product Based Articles",
     "subHead": "Market your product the right way. Use our effective product marketing services aided by Izart’s finest writers. ",
-    "illus": "article.svg"
+    "illus": "article.svg",
+    "sugg":[
+      {
+        "ino": 1,
+        "link": "seo",
+        "title": "SEO Articles"
+      },
+      {
+        "ino": 2,
+        "link": "informative+articles",
+        "title": "Informative Articles"
+      },
+      {
+        "ino": 3,
+        "link": "articles",
+        "title": "Articles"
+      },
+      {
+        "ino": 4,
+        "link": "technical+articles",
+        "title": "Technical Articles"
+      }
+    ]
   },
   {
       "body":[

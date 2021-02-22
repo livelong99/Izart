@@ -3,9 +3,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import dimensions from "../../OtherFiles/Dimensions";
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
   } from "react-router-dom";
 
@@ -84,7 +81,7 @@ export default function NavigationBar() {
         }
         else if(serv == 1){
             return(<div class="row">
-            <header><Link style={{color:"#303778", fontSize:"22px", fontWeight:"700"}}>Article Writing</Link></header>
+            <header onClick={() => {setMain(0)}}><Link style={{color:"#303778", fontSize:"22px", fontWeight:"700"}} to="/services/articles">Article Writing</Link></header>
                 <ul class="mega-links">
                     <li onClick={() => {setMain(0)}}><Link to="/services/technical+articles"><a href="#">Technical Articles</a></Link></li>
                     <li onClick={() => {setMain(0)}}><Link to="/services/seo"><a href="#">SEO Articles</a></Link></li>
