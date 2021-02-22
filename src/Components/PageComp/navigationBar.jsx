@@ -83,10 +83,10 @@ export default function NavigationBar() {
             return(<div class="row">
             <header onClick={() => {setMain(0)}}><Link style={{color:"#303778", fontSize:"22px", fontWeight:"700"}} to="/services/articles">Article Writing</Link></header>
                 <ul class="mega-links">
-                    <li onClick={() => {setMain(0)}}><Link to="/services/technical+articles"><a href="#">Technical Articles</a></Link></li>
-                    <li onClick={() => {setMain(0)}}><Link to="/services/seo"><a href="#">SEO Articles</a></Link></li>
-                    <li onClick={() => {setMain(0)}}><Link to="/services/informative+articles"><a href="#">Informative Articles</a></Link></li>
-                    <li onClick={() => {setMain(0)}}><Link to="/services/product+based"><a href="#">Product Based Articles</a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/technical+articles"><a href="#">Technical Articles</a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/seo"><a href="#">SEO Articles</a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/informative+articles"><a href="#">Informative Articles</a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/product+based"><a href="#">Product Based Articles</a></Link></li>
                 </ul>
             </div>)
         }
@@ -94,10 +94,10 @@ export default function NavigationBar() {
             return(<div class="row">
             <header><Link style={{color:"#303778", fontSize:"22px", fontWeight:"700"}}>Social Media Content</Link></header>
                 <ul class="mega-links">
-                    <li onClick={() => {setMain(0)}}><Link to="/services/facebook"><a href="#">Facebook Post Writing </a></Link></li>
-                    <li onClick={() => {setMain(0)}}><Link to="/services/twitter"><a href="#">Twitter Posts</a></Link></li>
-                    <li onClick={() => {setMain(0)}}><Link to="/services/linkedin"><a href="#">LinkedIn Content for Business</a></Link></li>
-                    <li onClick={() => {setMain(0)}}><Link to="/services/instagram"><a href="#">Instagram Strategy {"&"} Content </a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/facebook"><a href="#">Facebook Post Writing </a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/twitter"><a href="#">Twitter Posts</a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/linkedin"><a href="#">LinkedIn Content for Business</a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/instagram"><a href="#">Instagram Strategy {"&"} Content </a></Link></li>
                 </ul>
             </div>)
         }
@@ -105,9 +105,9 @@ export default function NavigationBar() {
             return(<div class="row">
             <header onClick={() => {setMain(0)}}><Link style={{color:"#303778", fontSize:"22px", fontWeight:"700"}} to="/services/blog">Blog Writing</Link></header>
                 <ul class="mega-links">
-                <li onClick={() => {setMain(0)}}><a href="#">Website Blogs</a></li>
-                <li onClick={() => {setMain(0)}}><a href="#">Business Blogs </a></li>
-                <li onClick={() => {setMain(0)}}><a href="#">Affiliate Blogs</a></li>
+                <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><a href="#">Website Blogs</a></li>
+                <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><a href="#">Business Blogs </a></li>
+                <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><a href="#">Affiliate Blogs</a></li>
                 </ul>
             </div>)
         }
@@ -115,11 +115,11 @@ export default function NavigationBar() {
             return(<div class="row">
                 <header><Link style={{color:"#303778", fontSize:"22px", fontWeight:"700"}}>Acedamics</Link></header>
                 <ul class="mega-links">
-                    <li onClick={() => {setMain(0)}}><Link to="/services/lor"><a href="#">LOR </a></Link></li>
-                    <li onClick={() => {setMain(0)}}><Link to="/services/sop"><a href="#">SOP </a></Link></li>
-                    <li onClick={() => {setMain(0)}}><Link to="/services/resume"><a href="#">Resume {"&"} CV</a></Link></li>
-                    <li onClick={() => {setMain(0)}}><Link to="/services/cover+letter"><a href="#">Cover Letter </a></Link></li>
-                    <li onClick={() => {setMain(0)}}><Link to="/services/research+paper"><a href="#">Research Paper</a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/lor"><a href="#">LOR </a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/sop"><a href="#">SOP </a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/resume"><a href="#">Resume {"&"} CV</a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/cover+letter"><a href="#">Cover Letter </a></Link></li>
+                    <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/research+paper"><a href="#">Research Paper</a></Link></li>
                 </ul>
             </div>)
         }
@@ -135,45 +135,45 @@ export default function NavigationBar() {
                 <label for="showMega" class="mobile-item">Services</label>
                 <div ref={meg01} class="mega-box">
                     <div class="content">
-                    <div onClick={menuClick} class="row">
+                    <div onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="row">
                         <Link to="/services/whitepaper"><a href="#"><header>Whitepaper</header></a></Link> 
                     </div>
-                    <div onClick={menuClick} class="row">
+                    <div onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="row">
                         <Link to="/services/website+content"><a href="#"><header>Website Content</header></a></Link>
                     </div>
-                    <div onClick={menuClick} class="row">
+                    <div onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="row">
                         <Link to="/services/technical+writing"><a href="#"><header>Technical Writing</header></a></Link>
                     </div>
-                    <div onClick={menuClick} class="row">
+                    <div onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="row">
                         <Link to="/services/copywriting"><a href="#"><header>Copywriting</header></a></Link>
                     </div>
                     <div class="row">
                     <a href="#"><header>Article Writing</header></a>
                         <ul class="mega-links">
-                        <li onClick={menuClick} ><Link to="/services/technical+articles"><a href="#">Technical Articles</a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/seo"><a href="#">SEO Articles</a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/informative+articles"><a href="#">Informative Articles</a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/product+based"><a href="#">Product Based Articles</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/technical+articles"><a href="#">Technical Articles</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/seo"><a href="#">SEO Articles</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/informative+articles"><a href="#">Informative Articles</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/product+based"><a href="#">Product Based Articles</a></Link></li>
                         </ul>
                     </div>
                     <div class="row">
                     <a href="#"><header>Social Media Content</header></a>
                         <ul class="mega-links">
-                        <li onClick={menuClick} ><Link to="/services/facebook"><a href="#">Facebook Post Writing </a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/twitter"><a href="#">Twitter Posts</a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/linkedin"><a href="#">LinkedIn Content for Business</a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/instagram"><a href="#">Instagram Strategy {"&"} Content </a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/quora"><a href="#">Quora Post</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/facebook"><a href="#">Facebook Post Writing </a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/twitter"><a href="#">Twitter Posts</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/linkedin"><a href="#">LinkedIn Content for Business</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/instagram"><a href="#">Instagram Strategy {"&"} Content </a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/quora"><a href="#">Quora Post</a></Link></li>
                         </ul>
                     </div>
                     <div class="row">
                     <a href="#"><header>Academics</header></a>
                         <ul class="mega-links">
-                        <li onClick={menuClick} ><Link to="/services/lor"><a href="#">LOR </a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/sop"><a href="#">SOP </a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/resume"><a href="#">Resume {"&"} CV</a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/cover+letter"><a href="#">Cover Letter </a></Link></li>
-                        <li onClick={menuClick} ><Link to="/services/research"><a href="#">Research Paper</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/lor"><a href="#">LOR </a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/sop"><a href="#">SOP </a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/resume"><a href="#">Resume {"&"} CV</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/cover+letter"><a href="#">Cover Letter </a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/services/research"><a href="#">Research Paper</a></Link></li>
                         </ul>
                     </div>
                     <div class="row">
@@ -199,10 +199,10 @@ export default function NavigationBar() {
                     <div class="content">
                     <div onClick={() => setServ(0)} class="row">
                         <ul onClick={() => setServ(0)} class="mega-links">
-                        <li onClick={() => {setMain(0)}}><Link to="/services/whitepaper"><a href="#">Whitepaper</a></Link></li>
-                        <li onClick={() => {setMain(0)}}><Link to="/services/website+content"><a href="#">Website Content</a></Link></li>
-                        <li onClick={() => {setMain(0)}}><Link to="/services/technical+writing"><a href="#">Technical Writing</a></Link></li>
-                        <li onClick={() => {setMain(0)}}><Link to="/services/copywriting"><a href="#">Copywriting</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/whitepaper"><a href="#">Whitepaper</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/website+content"><a href="#">Website Content</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/technical+writing"><a href="#">Technical Writing</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/copywriting"><a href="#">Copywriting</a></Link></li>
                         </ul>
                     </div>
                     <div class="row">
