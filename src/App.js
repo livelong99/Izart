@@ -1,13 +1,16 @@
-// import './css/nav.css'
-import './App.css';
-import './App1.css';
-import React, {useEffect, useRef, useState} from 'react';
-import Types from "./types"
-import NavigationBar from "./navigationBar.jsx"
-import Footer from "./Footer";
-import dimensions from "./Dimensions";
-import Home from "./Home"
-import Services from "./Services"
+import './css/nav.css';
+import './css/serv.css';
+import './css/App.css';
+import "./css/types.css";
+import './css/App1.css';
+import React, {useRef} from 'react';
+import Types from "./Components/Types/types"
+import NavigationBar from "./Components/PageComp/navigationBar.jsx"
+import Footer from "./Components/PageComp/Footer";
+import dimensions from "./OtherFiles/Dimensions";
+import Home from "./Components/Home/Home"
+import Services from "./Components/Services/Services"
+import servData from "./OtherFiles/service.json";
 import {
   BrowserRouter as Router,
   Switch,
@@ -32,16 +35,18 @@ const App = () => {
 
   return (
     <div>
-      <NavigationBar></NavigationBar>
       <Router>
+      <NavigationBar></NavigationBar>
       <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/services" component={Services} />
+          {servData.map(serv => (
+            <Route path={"/services/" + serv.link} exact><Services data={serv} /></Route>
+          ))}
           <Route path="/types" component={Types} />
         </Switch>
+        <a data-aos="fade-up" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+919319150688"><img src="../Images/whatsapp.svg" /></a>
+        <Footer />
       </Router>
-      <a data-aos="fade-up" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+919319150688"><img src="Images/whatsapp.svg" /></a>
-      <Footer />
     </div>
   );
 }

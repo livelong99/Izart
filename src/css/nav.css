@@ -244,8 +244,9 @@ nav .wrapper{
 .content .row header{
   color: #303778;
   border-radius: 5px;
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 21px;
+  width: 100%;
+  font-weight: 600;
 }
 .content .row .mega-links{
   margin-left: -40px;

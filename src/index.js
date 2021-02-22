@@ -1,11 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Dashboard from './Components/Dashboard/index.js'
-import Types from "./types";
-import NavigationBar from "./navigationBar.jsx";
-import Services from "./Services";
-import Form from "./form"
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
