@@ -3,16 +3,16 @@
 // import './App1.css';
 import React, {useRef} from 'react';
 import OurWork from "../Home/ourWork";
-import Form from "./form";
-import Info from "./infograph";
+import Form from "../Services/form";
+import Info from "../Services/infograph";
 import {
   Link
 } from "react-router-dom";
 
 // return(<><br/>{line}<br/></>);
 
-const Service = ({data}) => {
-  
+const Industries = ({data}) => {
+
     const frm = useRef(null);
 
     const sugHov = (e) => {
@@ -34,15 +34,14 @@ const Service = ({data}) => {
         <div class="serv">
           <div class="land">
           <div class="section01">
-          <div class="mainTxt">
+          <div class="mainTxt" style={{width:"100%", marginTop:"10px", marginBottom: "-200px"}}>
           <div class="headone">
             <p>{data.title}</p>
           </div>
           <div class="subhead">
-            <p>{data.subHead}</p>
+            <p>{data.subhead}</p>
           </div>
           </div>
-          <div class="mainIll"><img src={("../Images/Services/" + data.illus)} /></div>
         </div>
         </div>
         <div>
@@ -68,4 +67,4 @@ const Service = ({data}) => {
     )
 }
 
-export default Service;
+export default Industries;

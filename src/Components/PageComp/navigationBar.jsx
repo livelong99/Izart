@@ -229,7 +229,7 @@ export default function NavigationBar() {
                     <input type="checkbox" id="showDrop" />
                     <label for="showDrop" class="mobile-item">Industries</label>
                     <ul class="drop-menu">
-                        <li><a href="#">Software and Technology </a></li>
+                        <li><Link to="/industries/whitepaper"><a href="#">Software and Technology </a></Link></li>
                         <li><a href="#">Information Technology</a></li>
                         <li><a href="#">Marketing {"&"} Advertisement</a></li>
                         <li><a href="#">Finance</a></li>

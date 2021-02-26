@@ -11,6 +11,8 @@ import dimensions from "./OtherFiles/Dimensions";
 import Home from "./Components/Home/Home"
 import Services from "./Components/Services/Services"
 import servData from "./OtherFiles/service.json";
+import indusData from "./OtherFiles/indus.json";
+import Industries from "./Components/Industries/Industries"
 import {
   BrowserRouter as Router,
   Switch,
@@ -41,6 +43,9 @@ const App = () => {
           <Route path="/" exact component={Home} />
           {servData.map(serv => (
             <Route path={"/services/" + serv.link} exact><Services data={serv} /></Route>
+          ))}
+          {indusData.map(indus => (
+            <Route path={"/industries/" + indus.link} exact><Industries data={indus} /></Route>
           ))}
           <Route path="/types" component={Types} />
         </Switch>
