@@ -298,7 +298,7 @@ export default function NavigationBar() {
         }
     }
 
-    return(<div data-aos="fade-down" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500"> 
+    return(<div> 
         <nav>
             <div class="wrapper">
             <div ref={navBg} onClick={() => setMain(0)} class="navBg" />
