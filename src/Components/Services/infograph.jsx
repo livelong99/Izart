@@ -45,7 +45,7 @@ const Infograph = () => {
                         <img class="tri-1" src="../Images/triangle02.svg" />
                         <div class="blkContent">
                             <div class="blkHead"><p>IT’S A WRAP</p></div>
-                            <div class="blkBdy"><p>Publish the final content and see your inbound traffic, leads, and revenues grow exponentially.</p></div>
+                            <div class="blkBdy"><p>Publish the final content and see your inbound traffic, leads, and revenue grow exponentially.</p></div>
                         </div>
                     </div>
                     <div class="blank-end"  style={{zIndex: "2"}}></div>

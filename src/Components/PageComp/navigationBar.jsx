@@ -229,21 +229,18 @@ export default function NavigationBar() {
                     <input type="checkbox" id="showDrop" />
                     <label for="showDrop" class="mobile-item">Industries</label>
                     <ul class="drop-menu">
-                        <li><Link to="/industries/whitepaper"><a href="#">Software and Technology </a></Link></li>
-                        <li><a href="#">Information Technology</a></li>
-                        <li><a href="#">Marketing {"&"} Advertisement</a></li>
-                        <li><a href="#">Finance</a></li>
-                        <li><a href="#">E-Commerce</a></li>
-                        <li><a href="#">Academics</a></li>
-                        <li><a href="#">Events and Hospitality</a></li>
-                        <li><a href="#">Healthcare and Sciences</a></li>
-                        <li><a href="#">Fashion </a></li>
-                        <li><a href="#">Lifestyle</a></li>
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Entertainment</a></li>
-                        <li><a href="#">Government</a></li>
-                        <li><a href="#">Sports and Fitness</a></li>
-                        <li><a href="#">Legal</a></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/software+technology"><a href="#">Software and Technology </a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/information+technology"><a href="#">Information Technology</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/marketing+advertisement"><a href="#">Marketing {"&"} Advertisement</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/finance"><a href="#">Finance</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/ecommerce"><a href="#">E-Commerce</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/academics"><a href="#">Academics</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/events+hospitality"><a href="#">Events and Hospitality</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/healthcare+sciences"><a href="#">Healthcare and Sciences</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/fashion"><a href="#">Fashion </a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/travel"><a href="#">Lifestyle</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/entertainment"><a href="#">Travel</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/sports+fitness"><a href="#">Entertainment</a></Link></li>
                     </ul>
                 </li>
             );
@@ -258,29 +255,26 @@ export default function NavigationBar() {
                     <div class="content">
                     <div class="row">
                         <ul class="mega-links">
-                        <li><a href="#">Software and Technology </a></li>
-                        <li><a href="#">Information Technology</a></li>
-                        <li><a href="#">Marketing {"&"} Advertisement</a></li>
-                        <li><a href="#">Finance</a></li>
-                        <li><a href="#">E-Commerce</a></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/software+technology"><a href="#">Software and Technology </a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/information+technology"><a href="#">Information Technology</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/marketing+advertisement"><a href="#">Marketing {"&"} Advertisement</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/finance"><a href="#">Finance</a></Link></li>
                         </ul>
                     </div>
                     <div class="row">
                         <ul class="mega-links">
-                        <li><a href="#">Academics</a></li>
-                        <li><a href="#">Events and Hospitality</a></li>
-                        <li><a href="#">Healthcare and Sciences</a></li>
-                        <li><a href="#">Fashion </a></li>
-                        <li><a href="#">Lifestyle</a></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/ecommerce"><a href="#">E-Commerce</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/academics"><a href="#">Academics</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/events+hospitality"><a href="#">Events and Hospitality</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/healthcare+sciences"><a href="#">Healthcare and Sciences</a></Link></li>
                         </ul>
                     </div>
                     <div class="row">
                         <ul class="mega-links">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Entertainment</a></li>
-                        <li><a href="#">Government</a></li>
-                        <li><a href="#">Sports and Fitness</a></li>
-                        <li><a href="#">Legal</a></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/fashion"><a href="#">Fashion </a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/travel"><a href="#">Lifestyle</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/entertainment"><a href="#">Travel</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/sports+fitness"><a href="#">Entertainment</a></Link></li>
                         </ul>
                     </div>
                     </div>

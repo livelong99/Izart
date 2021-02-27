@@ -127,6 +127,7 @@ nav .wrapper{
 }
 .nav-links li a:hover{
   background: #E2E2E2;
+  color: #323b92;
 }
 
 .nav-links li.btn-text a{
