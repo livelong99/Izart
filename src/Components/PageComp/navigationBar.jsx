@@ -24,8 +24,6 @@ export default function NavigationBar() {
             setServ(0);
             navBg.current.style.display = "none";
             // navBg.current.style.zIndex = "-20";
-            meg01.current.style.top = "85px";
-            meg02.current.style.top = "85px";
             meg01.current.style.opacity = "0";
             meg01.current.style.visibility = "hidden";
             meg02.current.style.opacity = "0";
@@ -34,8 +32,6 @@ export default function NavigationBar() {
         }
         else if(mainMen == 1){
             navBg.current.style.display = "block";
-            meg01.current.style.top = "70px";
-            meg02.current.style.top = "85px";
             meg01.current.style.opacity = "1";
             meg01.current.style.visibility = "visible";
             meg02.current.style.opacity = "0";
@@ -44,8 +40,6 @@ export default function NavigationBar() {
         else if(mainMen == 2){
             setServ(0);
             navBg.current.style.display = "block";
-            meg01.current.style.top = "85px";
-            meg02.current.style.top = "70px";
             meg01.current.style.opacity = "0";
             meg01.current.style.visibility = "hidden";
             meg02.current.style.opacity = "1";
@@ -81,7 +75,6 @@ export default function NavigationBar() {
         }
         else if(serv == 1){
             return(<div class="row">
-            <header onClick={() => {setMain(0)}}><Link style={{color:"#303778", fontSize:"22px", fontWeight:"700"}} to="/services/articles">Article Writing</Link></header>
                 <ul class="mega-links">
                     <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/technical+articles"><a href="#">Technical Articles</a></Link></li>
                     <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/seo"><a href="#">SEO Articles</a></Link></li>
@@ -92,7 +85,6 @@ export default function NavigationBar() {
         }
         else if(serv == 2){
             return(<div class="row">
-            <header><Link style={{color:"#303778", fontSize:"22px", fontWeight:"700"}}>Social Media Content</Link></header>
                 <ul class="mega-links">
                     <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/facebook"><a href="#">Facebook Post Writing </a></Link></li>
                     <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/twitter"><a href="#">Twitter Posts</a></Link></li>
@@ -103,7 +95,6 @@ export default function NavigationBar() {
         }
         else if(serv == 3){
             return(<div class="row">
-            <header onClick={() => {setMain(0)}}><Link style={{color:"#303778", fontSize:"22px", fontWeight:"700"}} to="/services/blog">Blog Writing</Link></header>
                 <ul class="mega-links">
                 <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><a href="#">Website Blogs</a></li>
                 <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><a href="#">Business Blogs </a></li>
@@ -113,7 +104,6 @@ export default function NavigationBar() {
         }
         else if(serv==4){
             return(<div class="row">
-                <header><Link style={{color:"#303778", fontSize:"22px", fontWeight:"700"}}>Acedamics</Link></header>
                 <ul class="mega-links">
                     <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/lor"><a href="#">LOR </a></Link></li>
                     <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/sop"><a href="#">SOP </a></Link></li>
@@ -207,10 +197,10 @@ export default function NavigationBar() {
                     </div>
                     <div class="row">
                         <ul class="mega-links">
-                        <li onClick={() => setServ(1)} ><a href="#">{ serv==1 ? <b>Article Writing</b> : "Article Writing" }</a>{ serv==1 ? <img src="../Images/serArr.svg"/> : null }</li>
-                        <li onClick={() => setServ(2)}><a href="#">{ serv==2 ? <b>Social Media Content</b> : "Social Media Content" }</a>{ serv==2 ? <img src="../Images/serArr.svg"/> : null }</li>
-                        <li onClick={() => setServ(3)}><a href="#">{ serv==3 ? <b>Blog Writing</b> : "Blog Writing" }</a>{ serv==3 ? <img src="../Images/serArr.svg"/> : null }</li>
-                        <li onClick={() => setServ(4)}><a href="#">{ serv==4 ? <b>Academics</b> : "Academics" }</a>{ serv==4 ? <img src="../Images/serArr.svg"/> : null }</li>
+                        <li onMouseEnter={() => setServ(1)} onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/articles"><a href="#">{ serv==1 ? <b>Article Writing</b> : "Article Writing" }</a>{ serv==1 ? <img src="../Images/serArr.svg"/> : null }</Link></li>
+                        <li onMouseEnter={() => setServ(2)} onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/social"><a href="#">{ serv==2 ? <b>Social Media Content</b> : "Social Media Content" }</a>{ serv==2 ? <img src="../Images/serArr.svg"/> : null }</Link></li>
+                        <li onMouseEnter={() => setServ(3)} onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/blogs"><a href="#">{ serv==3 ? <b>Blog Writing</b> : "Blog Writing" }</a>{ serv==3 ? <img src="../Images/serArr.svg"/> : null }</Link></li>
+                        <li onMouseEnter={() => setServ(4)} onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/services/academics"><a href="#">{ serv==4 ? <b>Academics</b> : "Academics" }</a>{ serv==4 ? <img src="../Images/serArr.svg"/> : null }</Link></li>
                         </ul>
                     </div>
                     {ServiceBox()} 
@@ -238,9 +228,9 @@ export default function NavigationBar() {
                         <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/events+hospitality"><a href="#">Events and Hospitality</a></Link></li>
                         <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/healthcare+sciences"><a href="#">Healthcare and Sciences</a></Link></li>
                         <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/fashion"><a href="#">Fashion </a></Link></li>
-                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/travel"><a href="#">Lifestyle</a></Link></li>
-                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/entertainment"><a href="#">Travel</a></Link></li>
-                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/sports+fitness"><a href="#">Entertainment</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/travel"><a href="#">Travel</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/entertainment"><a href="#">Entertainment</a></Link></li>
+                        <li onClick={() =>{menuClick(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} ><Link to="/industries/sports+fitness"><a href="#">Sports and Fitness</a></Link></li>
                     </ul>
                 </li>
             );
@@ -272,9 +262,9 @@ export default function NavigationBar() {
                     <div class="row">
                         <ul class="mega-links">
                         <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/fashion"><a href="#">Fashion </a></Link></li>
-                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/travel"><a href="#">Lifestyle</a></Link></li>
-                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/entertainment"><a href="#">Travel</a></Link></li>
-                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/sports+fitness"><a href="#">Entertainment</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/travel"><a href="#">Travel</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/entertainment"><a href="#">Entertainment</a></Link></li>
+                        <li onClick={() => {setMain(0); document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}}><Link to="/industries/sports+fitness"><a href="#">Sports and Fitness</a></Link></li>
                         </ul>
                     </div>
                     </div>
@@ -323,3 +313,10 @@ export default function NavigationBar() {
     );
 }
 
+
+
+
+
+
+// Thank you for filling out the form. 
+// Our team will get in touch with you in the next 48-72 hours 

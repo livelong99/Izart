@@ -178,10 +178,9 @@ nav .wrapper{
   left: 0;
   width: 100%;
   padding: 0 30px;
-  top: 85px;
+  top: 70px;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
 }
 .mega-box .content{
   background: #FFFFFF;
