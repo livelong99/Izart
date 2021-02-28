@@ -13,18 +13,17 @@ import Services from "./Components/Services/Services"
 import servData from "./OtherFiles/service.json";
 import indusData from "./OtherFiles/indus.json";
 import Industries from "./Components/Industries/Industries"
+import Load from './Components/Home/preloader';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import { LocalAtmRounded } from '@material-ui/icons';
 
 const App = () => {
-  let navRef = useRef(null);
-  let bookBtn = useRef(null);
-  let oneRef = useRef(null);
-  let navCenterRef = useRef(null);
+  const loadRef = useRef(null);
   const {width} = dimensions();
 
   const isInViewport = (element) => {
@@ -35,8 +34,21 @@ const App = () => {
     );
   }
 
+  const loaded = () => {
+    loadRef.current.style.display = 'none';
+  }
+
+
   return (
     <div>
+      <div ref={loadRef} class="loadBg">
+        <div id="load" class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        </div>
+      </div>
+      <div onLoad={loaded}>
       <Router>
       <NavigationBar></NavigationBar>
       <Switch>
@@ -52,6 +64,7 @@ const App = () => {
         <a data-aos="fade-up" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+919319150688"><img src="../Images/whatsapp.svg" /></a>
         <Footer />
       </Router>
+    </div>
     </div>
   );
 }
