@@ -6,25 +6,26 @@ const Container = styled.div`
     padding: 1rem;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 `
 
 const ProfileImg = styled.img`
-    height: 2rem;
+    height: 3rem;
     margin: 0 1rem;
     cursor: pointer;
+    border-radius: 100%;
 `
 
-const MessageIcon = styled.span`
-    color: ${({ theme }) => theme.colorGray}; 
-    font-size: 27px;
+const MessageIcon = styled.img`
     cursor: pointer;
+    height: 2rem;
+    margin-right: 30px; 
 `
 const Nav = () => {
     return (
         <Container>
-            <MessageIcon className="iconify" data-inline="false" data-icon="mdi-light:email"></MessageIcon>
-            <ProfileImg />
+            <MessageIcon src="Images/not.svg"></MessageIcon>
+            <ProfileImg src="Images/portrait.jpg" />
         </Container>
     )
 }

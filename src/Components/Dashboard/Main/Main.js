@@ -1,6 +1,16 @@
-import React from 'react'
+import React, {useState, useContext} from 'react'
 import styled from 'styled-components'
 import Nav from './Nav'
+import AddItm from "./AddItem";
+import Cart from "./Cart";
+import Orders from "./Orders";
+import {DashContext} from "../../../Store";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 
 const Container = styled.div`
@@ -12,13 +22,18 @@ const Container = styled.div`
 
 
 const Main = () => {
-    return (
-        <Container>
-            <Nav />
-            {/* <NewDepositBtn />
-            <Deposits title="Active Deposits" count={2} data={depositData.active} />
-            <Deposits title="Closed Deposits" count={8} data={depositData.closed} /> */}
-        </Container>
+
+    const [dash, setDash] = useContext(DashContext);
+
+    return (           
+            <Container>
+                <Nav />
+                <Switch>
+                    <Route path="/add" exact component={AddItm} />
+                    <Route path="/orders" exact component={Orders} />
+                    <Route path="/cart" exact component={Cart} />
+                </Switch>
+            </Container>
     )
 }
 

@@ -1,11 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Dashboard from './Components/Dashboard'
+import Sign from './Components/Dashboard/signIn-signUp'
+import Loader from './Components/Home/preloader'
 import reportWebVitals from './reportWebVitals';
+import Store from "./Store";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <Store>
+      <App />
+    </Store>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

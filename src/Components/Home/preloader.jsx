@@ -3,11 +3,13 @@ import "../../css/load.css";
 
 const Load = () => {
     return(
-        <div class="loadBg">
-        <div id="load" class="loader">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+        <div className="loadBg">
+        <div class="container">
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
         </div>
         </div>
     );

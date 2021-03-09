@@ -34,21 +34,10 @@ const App = () => {
     );
   }
 
-  const loaded = () => {
-    loadRef.current.style.display = 'none';
-  }
-
 
   return (
     <div>
-      <div ref={loadRef} class="loadBg">
-        <div id="load" class="loader">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        </div>
-      </div>
-      <div onLoad={loaded}>
+      <div>
       <Router>
       <NavigationBar></NavigationBar>
       <Switch>
@@ -59,7 +48,7 @@ const App = () => {
           {indusData.map(indus => (
             <Route path={"/industries/" + indus.link} exact><Industries data={indus} /></Route>
           ))}
-          <Route path="/types" component={Types} />
+          <Route path="/types"><Types/></Route>
         </Switch>
         <a data-aos="fade-up" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+919319150688"><img src="../Images/whatsapp.svg" /></a>
         <Footer />

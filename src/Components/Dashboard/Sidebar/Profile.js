@@ -2,23 +2,28 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-    margin-top: 5rem;
+    margin-top: 3rem;
 `
 
 const ProfileImg = styled.img`
-    height: 5rem;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 100%;
 `
 const ProfileName = styled.h1`
-    font-size: 1rem;
-    font-weight: 300;
-    color: ${({ theme }) => theme.textColor};
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-family: "League Spartan Variable";
+    color: #FFFFFF;
 `
 
 const Profile = () => {
     return (
         <Container>
-            <ProfileImg src={Image} />
-            <ProfileName>Scott Grant</ProfileName>
+            <ProfileImg src="Images/portrait.jpg" />
+            <ProfileName>Vaibhav</ProfileName>
         </Container>
     )
 }

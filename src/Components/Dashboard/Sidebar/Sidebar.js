@@ -5,12 +5,13 @@ import Profile from './Profile'
 // import ToggleSwitch from './ToggleSwitch'
 
 const Container = styled.div`
-    background-color: ${({ theme }) => theme.secondary};
+    background-color: #303778;
+    z-index: 10;
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    width: 16rem;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
