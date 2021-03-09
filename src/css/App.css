@@ -602,7 +602,9 @@ footer{
 
 footer .container {
   display: flex;
+  width: 100%;
   justify-content: space-between;
+  align-items: baseline;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -612,7 +614,7 @@ footer .container .sec{
 }
 
 footer .container .sec.aboutus{
-  width: 40%;
+  width: 65%;
 }
 
 footer .container h2{
