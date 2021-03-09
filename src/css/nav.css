@@ -123,7 +123,6 @@ nav .wrapper{
   font-weight: 500;
   padding: 9px 15px;
   border-radius: 5px;
-  transition: all 0.3s ease;
 }
 .nav-links li a:hover{
   background: #E2E2E2;
