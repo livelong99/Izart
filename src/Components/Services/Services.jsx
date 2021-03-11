@@ -104,8 +104,6 @@ const Service = ({data}) => {
                 </div>
               </div>
               ) : null}
-            
-            <OurWork />
         </div>
     )
 }

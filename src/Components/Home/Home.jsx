@@ -3,6 +3,7 @@ import Typical from "react-typical";
 import ThreeC from "./threeC";
 import OurWork from "./ourWork";
 import Testimonials from "./Testimonials";
+import Form from "../Services/form";
 import dimensions from "../../OtherFiles/Dimensions";
 
 const Home = () => {
@@ -47,9 +48,9 @@ const Home = () => {
             />
           </div>
           <div data-aos="fade-zoom-out" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="subhead">
-            <p>We scale up business’s revenues by writing content that sells.</p>
+            <p>We write content that’s easy to read, hard to ignore and impossible to forget.</p>
           </div>
-          
+
           <div class="extra"></div>
           </div>
 
@@ -96,7 +97,10 @@ const Home = () => {
         </div>
         <ThreeC />
         <Testimonials />
-        <OurWork />
+        <div class="homeContactUs">
+        <div class="contactUsEmo"><img src="Images/email.svg" width="256px" height="256px" /></div>
+        <div class="contactUsForm"><Form /></div>
+        </div>
     </div>
   );
 }

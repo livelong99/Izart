@@ -10,6 +10,7 @@ const Form = () => {
 
 	const [contactNumber, setContactNumber] = useState("000000");
 	const form = useRef(null);
+	const [sub, setSub] = useState(0);
 
 	const { register, handleSubmit, watch, errors } = useForm();
 	const onSubmit = (data) => {
@@ -17,7 +18,7 @@ const Form = () => {
 		sendForm('contact_form', 'template_qb96w4q', '#contact_us')
 			.then(function(response) {
 			console.log('SUCCESS!', response.status, response.text);
-			form.current.reset();
+			setSub(1);
 			}, function(error) {
 			console.log('FAILED...', error);
 			});
@@ -31,8 +32,10 @@ const Form = () => {
 	  }
 
     return(
-        <div class="container-contact1">
-			<form ref={form} id="contact_us" class="contact1-form validate-form" onSubmit={handleSubmit(onSubmit)}>
+        <div  id="contactUsForm"  class="container-contact1">
+
+			{(sub == 0) ? (
+				<form ref={form} id="contact_us" class="contact1-form validate-form" onSubmit={handleSubmit(onSubmit)}>
 				<span class="contact1-form-title">
 					Contact Us
 				</span>
@@ -71,6 +74,15 @@ const Form = () => {
 					</button>
 				</div>
 			</form>
+			) : (
+				<div class="successF">
+					<img src="../Images/check.svg"/>
+					<p>Thank you for filling out the form.</p>
+					<p>Our team will get in touch with you in the next 48-72 hours</p>
+				</div>
+			) }
+
+			
 		</div>
     )
 }

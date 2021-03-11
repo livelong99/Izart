@@ -1,0 +1,52 @@
+[
+    {
+        "sno" : 1,
+      "title": "Content Omnipotent",
+      "subtitle": "Your one-stop solution for ALL THINGS CONTENT!",
+      "body": "With Content Omnipotent you get complete coverage of Content Marketing. We handle everything from Content Ideation to Creation to Curation; allowing you to focus solely on your core functionalities.",
+      "tagline": "How this works",
+      "infohead": [
+        "Data Collection","Izart’s Research","Competitor Analysis","Content Strategy","Content Calendar","Content Review"
+      ],
+      "infodata":[
+        "Our Content Strategists sit with you and understand your brand’s vision, its goals, and its core values. Furthermore, we collect all the available data points from you to understand you audience.",
+        "Our Strategists will then conduct their in-house research in the form of independent interviews, testimonials, surveys/polls to understand your target demographic. Based on this research our Content Strategists create unique Buyer Personas for your brand.",
+        "We conduct a comprehensive competitive analysis to figure out the current gaps in your competitor’s Content Marketing that your brand can capitalize on.",
+        "Our team will now create an overarching content strategy that will elucidate Content themes across all Marketing Funnels. Furthermore, it will also set milestones for 1 month, 3 Months, 6 Months, and 1 Year. ",
+        "Now, Izart’s Content Writers get on board. They implement the curated Content Strategy by creating a dynamic weekly content calendar. If required, our in-house designers can get on board to bring our writer’s exact vision to life.",
+        "Our team will monitor analytics across all marketing funnels and create a monthly report for your benefit. We will review the performance of all content pieces and update the content calendar appropriately."
+      ]
+    },
+    {
+        "sno" : 2,
+      "title": "Residential Wordsmith",
+      "subtitle": "Your thoughts translated by our words.",
+      "body": "This service type is for brands that already have a Content Strategy in place. All they are looking for are creative and punctual content writers. At Izart, we provide flexible options for companies of all sizes.",
+      "tagline": "How we work:",
+      "infohead": [
+        "Resource Allocation","Content Creation","Content Optimization","Content Review"
+      ],
+      "infodata":[
+        "Our Delivery Executive will get on a call with you and understand your requirements. Based on your requirements, they will allocate the appropriate number of internal resources dedicated to your brand.",
+        "Our Content Writers will get on board and immediately start executing your content calendar across all Marketing channels to perfection.",
+        "If required, Izart will also provide a dedicated resource to SEO Optimize every piece of content created by us.",
+        "At the end of every month, we will extend a feedback form so that we meet your expectation in every way possible."
+      ]
+    },
+    {
+        "sno" : 3,
+      "title": "No Strings Attached",
+      "subtitle": " ",
+      "body": "This service type is for brands that have immediate content requirements. Our writers will provide all Content Deliverables timely and that too at scale!",
+      "tagline": "How this works.",
+      "infohead": [
+        "Content Requirements","Content Creation","Content Review"
+      ],
+      "infodata": [
+        "Send a mail to us at operations@izart.in detailing your content requirements. We will reach back to you within 3-5 working hours with the quotation for the work.",
+        "Sit back and relax! Our Content Writers will now work on your requirements. We deliver all non-retainer content within 48-72 Hours. However, for urgent requirements we also provide an express 24 Hour delivery as well.",
+        "Do you have edits? No issues, we love editing. Our writers always strive for perfection. Hence, at Izart, we provide 3 free edits to every piece of content we deliver."
+      ]
+    }
+  ]
+  

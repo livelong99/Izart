@@ -614,7 +614,7 @@ footer .container .sec{
 }
 
 footer .container .sec.aboutus{
-  width: 65%;
+  width: 55%;
 }
 
 footer .container h2{
@@ -708,7 +708,7 @@ footer .container .sec.aboutus p{
 
 .contact{
   width: calc(35%-160px);
-  margin-right: 0;
+  margin-right: 150px;
 }
 
 .contact .info{
@@ -782,4 +782,27 @@ footer .container .sec.aboutus p{
 
 .whatsapp img:hover{
   height: 55px;
+}
+
+.homeContactUs {
+  background-color: #303778;
+  padding-top: 50px;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+.contactUsEmo {
+  display: inline-block;
+  width: 30%;
+  margin-left: 120px;
+  vertical-align: middle;
+}
+
+.contactUsForm {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
 }

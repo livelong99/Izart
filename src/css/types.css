@@ -30,7 +30,7 @@
 
 .infoT .bxs-l{
     width: 45%;
-    padding-top: 20vw;
+    padding-top: 21vw;
 }
 
 .infoT .c-line{
@@ -51,7 +51,7 @@
     display: inline-flex;
     justify-content: left;
     width: 100%;
-    margin-bottom: 10vw;
+    margin-bottom: 11vw;
 }
 
 
@@ -60,6 +60,26 @@
     height: 18vw;
     background-color: #FFFFFF;
     border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.stCont .boxT h2{
+    width: 100%;
+    font-size: 30px;
+    color: #303778;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "League Spartan Variable";
+}
+
+.stCont .boxT p{
+    width: 100%;
+    font-size: 17px;
+    color: #303778;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Sanchez";
 }
 
 .infoT .bxs-r .stCont .boxT{
@@ -83,35 +103,46 @@
 }
 
 
-@media (max-width: 1025px){
-
-    .types .section01 .mainTxt{
-        transform: translateY(0px);
-    }
-
-    .stCont .boxT{
-        border-radius: 10px;
-        height: 22vw;
-    }
-    .infoT{
-        width: 98%;
-        left: 1%;
-    }
-
-    .infoT .bxs-l{
-        padding-top: 30vw;
-    }
-
-    .infoT .bxs-r{
-        padding-top: 9vw;
-    }
-
-    .stCont{
-        margin-bottom: 17vw;
-    }
+@media (max-width: 450px){
 
 }
 
-@media (max-width: 450px){
+.mobInfoT{
+    width: 100%;
+    margin-bottom: 100px;
+}
 
+.mobInfoT .mobBoxT{
+    width: 80%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+}
+
+.mobInfoT img{
+    width: 16%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 43%;
+    transform: rotate(90deg);
+}
+
+.mobInfoT .mobBoxT h2{
+    width: 100%;
+    font-size: 28px;
+    color: #303778;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "League Spartan Variable";
+}
+
+.mobInfoT .mobBoxT p{
+    width: 100%;
+    font-size: 15px;
+    color: #303778;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Sanchez";
 }
