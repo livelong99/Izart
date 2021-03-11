@@ -269,7 +269,7 @@ export default function NavigationBar() {
                 <DropMen />
 {/* 
                 <li><a href="#" class="desktop-item">Resources</a><a href="#" class="mobile-item">Resources</a></li> */}
-                <li class="btn-text"><a href="#" class="desktop-item">Book a Call</a><a target="_blank" href="https://izart.zohobookings.in" class="mobile-item">Book a Call</a></li>
+                <li class="btn-text"><a target="_blank" href="https://izart.zohobookings.in" class="desktop-item">Book a Call</a><a target="_blank" href="https://izart.zohobookings.in" class="mobile-item">Book a Call</a></li>
                 
             </ul>
             </div>
