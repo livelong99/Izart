@@ -5,6 +5,10 @@ import OurWork from "./ourWork";
 import Testimonials from "./Testimonials";
 import Form from "../Services/form";
 import dimensions from "../../OtherFiles/Dimensions";
+import {
+  Link
+} from "react-router-dom";
+
 
 const Home = () => {
   let navRef = useRef(null);
@@ -71,7 +75,7 @@ const Home = () => {
               <div class="head"><p>Content Omnipotent</p></div>
               <div class="sub-head"><p>For those who want to start from scratch.</p></div>
               <div class="body"><p>We’ll kickstart your content marketing by creating detailed buyer personas, curating a data driven content strategy, and creating content that drives in increased revenues. </p></div>
-              <a href="#"><div class="more"><div class="btnText">learn more</div></div></a>
+              <Link onClick={() => {document.body.scrollTop = 0; document.documentElement.scrollTop = 0}} to="/types/02"><a href="#"><div class="more"><div class="btnText">learn more</div></div></a></Link>
             </div>
             {width>=1025 ? <div class="illus"><img src="Images/ser-1.svg" /></div>: null}
           </div>
@@ -81,7 +85,7 @@ const Home = () => {
               <div class="head al-right"><p>Residential Wordsmith</p></div>
               <div class="sub-head al-right"><p>When you have your content strategy and you just need an executioner.</p></div>
               <div class="body al-right"><p>There is no one better than the handpicked writers of Izart, to bring your vision to light. Use our internal resources for all your content creation needs.</p></div>
-              <a href="#"><div class="more bt-right"><div class="btnText">learn more</div></div></a>
+              <Link onClick={() => {document.body.scrollTop = 0; document.documentElement.scrollTop = 0}} to="/types/03"><a href="#"><div class="more bt-right"><div class="btnText">learn more</div></div></a></Link>
             </div>
           </div>
           <div class="service">
@@ -90,7 +94,7 @@ const Home = () => {
               <div class="head"><p>No strings attached </p></div>
               <div class="sub-head"><p>For all your immediate content requirements.</p></div>
               <div class="body"><p>Our team of writers can deliver high quality content deliverables at scale without any long term commitment. </p></div>
-              <a href="#"><div class="more"><div class="btnText">learn more</div></div></a>
+              <Link onClick={() => {document.body.scrollTop = 0; document.documentElement.scrollTop = 0}} to="/types/01"><a href="#"><div class="more"><div class="btnText">learn more</div></div></a></Link>
             </div>
             {width>=1025 ? <div class="illus"><img src="Images/ser-3.svg" /></div>: null}
           </div>
