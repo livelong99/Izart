@@ -805,3 +805,22 @@ footer .container .sec.aboutus p{
   width: 50%;
   vertical-align: middle;
 }
+
+@media (max-width: 991px){
+
+  .homeContactUs {
+    background-color: #ffffff;
+    padding-top: 0px;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: -10%;
+    margin-bottom: 100px;
+    padding-bottom: 0px;
+  }
+
+  .contactUsForm {
+    width: 100%;
+    display: block;
+    vertical-align:top;
+  }
+}

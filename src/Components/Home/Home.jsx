@@ -102,7 +102,7 @@ const Home = () => {
         <ThreeC />
         <Testimonials />
         <div class="homeContactUs">
-        <div class="contactUsEmo"><img src="Images/email.svg" width="256px" height="256px" /></div>
+        {(width >=971) ? (<div class="contactUsEmo"><img src="Images/email.svg" width="256px" height="256px" /></div>) : null}
         <div class="contactUsForm"><Form /></div>
         </div>
     </div>
