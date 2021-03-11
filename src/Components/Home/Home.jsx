@@ -42,7 +42,7 @@ const Home = () => {
           <div class="mainTxt">
           <div class="headone">
             <Typical
-              steps={[500, 'Home of Data Driven Storytellers.', 1000]}
+              steps={[1200, 'Home of Data Driven Storytellers.', 1000]}
               loop={1}
               wrapper="p"
             />
