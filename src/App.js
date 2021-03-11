@@ -44,7 +44,7 @@ const App = () => {
     <div>
       <div>
       <Router>
-      <Load />
+      <Load tm={2000}/>
       <NavigationBar></NavigationBar>
       <Switch>
           <Route path="/" exact component={Home} />
@@ -54,9 +54,9 @@ const App = () => {
           {indusData.map(indus => (
             <Route path={"/industries/" + indus.link} exact><Load /><Industries data={indus} /></Route>
           ))}
-          <Route path={"/types/01"} exact><Load /><Types1/></Route>
-          <Route path={"/types/02"} exact><Load /><Types2/></Route>
-          <Route path={"/types/03"} exact><Load /><Types3/></Route>
+          <Route path={"/types/01"} exact><Load tm={1000} /><Types1/></Route>
+          <Route path={"/types/02"} exact><Load tm={1000}/><Types2/></Route>
+          <Route path={"/types/03"} exact><Load tm={1000}/><Types3/></Route>
         </Switch>
         <a data-aos="fade-up" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+919711106474"><img src="../Images/whatsapp.svg" /></a>
         <Footer />

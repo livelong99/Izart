@@ -20,6 +20,18 @@
   align-items: center;
 }
 
+@media (max-width: 970px){
+  .loadBg{
+    margin: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+    padding-top: 50vh;
+    padding-left: 19vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .container {
   width: var(--container-size);
   display: flex;

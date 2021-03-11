@@ -1,15 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import "../../css/load.css";
 
-const Load = () => {
+const Load = ({tm}) => {
 
     const [visible, setVisible] = useState(true);
 
     useEffect(() => {
         setTimeout(() => {
         setVisible(false);
-        }, 1000);
-    }, 1000);
+        }, tm);
+    }, tm);
 
     return visible ? (
         <div className="loadBg">
