@@ -29,7 +29,7 @@ const Testimonials = () => {
                     <h5>Founder, CEO</h5>
                     <h5>Bloque Labs</h5>
                     <p>
-                        We've closely worked with Izart for our requirement of content. More than the content we need to build a story that can weave around our multiple products. Trust me, it wasn't easy. Akash, the founder of Izart has gone beyond the expectation every single time. We love Izart's work and would love to continue to take their services!
+                        We've closely worked with Izart for our requirement of content. More than the content we need to build a story that can weave around our multiple products. Trust me, it wasn't easy. Izart has gone above and beyond the expectation every single time. We love Izart's work and would love to continue to take their services!
                     </p>
                     </div>
                 </div>

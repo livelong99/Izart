@@ -94,20 +94,18 @@ const Types = ({data}) => {
           <div class="mainIll"><img src="../Images/ser-2.svg" /></div>
         </div>
         </div>
-        <div>
-            <div class="servContent">
-                <div class="writeUp">
-            <p style={{fontSize: "25px", textAlign: "center"}}>This service type is for brands that already have a Content Strategy in place. All they are looking for are creative and punctual content writers. At Izart, we provide flexible options for companies of all sizes.</p></div>
-                <div class="servForm">
-                    <Form />
-                </div>
-                </div>
-                </div>
+        <div class="typeContent">
+                <p>This service type is for brands that already have a Content Strategy in place. All they are looking for are creative and punctual content writers. At Izart, we provide flexible options for companies of all sizes.</p>    
+            </div>
                 <div class="darkBg">
             <div class="section02H">
                 <p>How This is Gonna Work</p>
             </div>
            {inf()}
+            </div>
+            <div class="homeContactUs">
+            {(width >=971) ? (<div class="contactUsEmo"><img src="../Images/email.svg" width="256px" height="256px" /></div>) : null}
+            <div class="contactUsForm"><Form /></div>
             </div>
         </div>
     )

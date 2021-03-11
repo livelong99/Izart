@@ -786,6 +786,7 @@ footer .container .sec.aboutus p{
 .homeContactUs {
   background-color: #303778;
   padding-top: 50px;
+  margin-top: 100px;
   border-radius: 20px;
   width: 80%;
   margin-left: 10%;
@@ -821,6 +822,5 @@ footer .container .sec.aboutus p{
   .contactUsForm {
     width: 100%;
     display: block;
-    vertical-align:top;
   }
 }

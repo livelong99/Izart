@@ -27,11 +27,11 @@ const Footer = () => {
 				<ul class="info">
 					<li>
 						<span><i class="fa fa-phone" aria-hidden="true"></i></span>
-						<p><a href="tel:9319150688">+91 9319150688</a></p>
+						<p><a href="tel:9711106474">+91 9711106474</a></p>
 					</li>
 					<li>
 						<span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-						<p><a href="mailto:izart@gmail.com">izart@gmail.com</a></p>
+						<p><a href="mailto:operations@izart.in">operations@izart.in</a></p>
 					</li>
 				</ul>
 			</div>

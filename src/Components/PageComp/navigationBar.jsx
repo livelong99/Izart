@@ -257,7 +257,7 @@ export default function NavigationBar() {
         <nav>
             <div class="wrapper">
             {(mainMen != 0) ? (<div ref={navBg} onClick={() => setMain(0)} class="navBg" />) : null}
-            <div class="logo"><Link to="/"><a href="">izart</a></Link></div>
+            <div class="logo"><Link onClick={() =>{document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} to="/"><a href="">izart</a></Link></div>
             <div  ref={menuRef} onClick={menuClick} class="menu-btn">
                 <div class="menu-btn__burger"></div>
             </div>
@@ -269,7 +269,7 @@ export default function NavigationBar() {
                 <DropMen />
 {/* 
                 <li><a href="#" class="desktop-item">Resources</a><a href="#" class="mobile-item">Resources</a></li> */}
-                <li class="btn-text"><a href="#" class="desktop-item">Book a Call</a><a href="#" class="mobile-item">Book a Call</a></li>
+                <li class="btn-text"><a href="#" class="desktop-item">Book a Call</a><a target="_blank" href="https://izart.zohobookings.in" class="mobile-item">Book a Call</a></li>
                 
             </ul>
             </div>

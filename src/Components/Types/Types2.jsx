@@ -119,20 +119,18 @@ const Types = ({data}) => {
           <div class="mainIll"><img src="../Images/ser-1.svg" /></div>
         </div>
         </div>
-        <div>
-            <div class="servContent">
-                <div class="writeUp">
-            <p style={{fontSize: "25px", textAlign: "center"}}>With Content Omnipotent you get complete coverage of Content Marketing. We handle everything from Content Ideation to Creation to Curation; allowing you to focus solely on your core functionalities.</p></div>
-                <div class="servForm">
-                    <Form />
-                </div>
-                </div>
-                </div>
+            <div class="typeContent">
+                <p>With Content Omnipotent you get complete coverage of Content Marketing. We handle everything from Content Ideation to Creation to Curation; allowing you to focus solely on your core functionalities.</p>    
+            </div>
             <div class="darkBg">
             <div class="section02H">
                 <p>How This is Gonna Work</p>
             </div>
            {inf()}
+            </div>
+            <div class="homeContactUs">
+            {(width >=971) ? (<div class="contactUsEmo"><img src="../Images/email.svg" width="256px" height="256px" /></div>) : null}
+            <div class="contactUsForm"><Form /></div>
             </div>
         </div>
     )

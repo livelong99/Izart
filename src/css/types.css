@@ -56,7 +56,7 @@
 
 
 .stCont .boxT{
-    width: 70%;
+    width: 100%;
     height: 18vw;
     background-color: #FFFFFF;
     border-radius: 40px;
@@ -69,16 +69,16 @@
     font-size: 30px;
     color: #303778;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: "League Spartan Variable";
 }
 
 .stCont .boxT p{
     width: 100%;
-    font-size: 17px;
+    font-size: 15px;
     color: #303778;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
     font-family: "Sanchez";
 }
 
@@ -96,6 +96,24 @@
 .infoT .bxs-r .stCont img{
     margin-left: -25%;
     transform: rotate(180deg);
+}
+
+.typeContent{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 10%;
+}
+
+.typeContent p{
+    font-size: 30px;
+    font-family: Sanchez;
+    color: #303778;
+    text-align: center;
+    width: 100%;
+    padding-right: 0px;
+
 }
 
 @media (max-width: 1150px){
