@@ -2,9 +2,12 @@ import React, {useContext} from 'react'
 import MenuLink from './MenuLink'
 import styled from 'styled-components'
 import {DashContext} from "../../../../Store";
+import firebase from "firebase/app";
 import {
     Link
   } from "react-router-dom";
+
+import dimension from "../../../../OtherFiles/Dimensions"
 
 
 const Container = styled.div`
@@ -13,9 +16,9 @@ const Container = styled.div`
 `
 
 const Add = styled.div`
-    width: 70%;
-    border-right: ${props => props.active ? "90px solid rgba(255,255,255,1)" : "none"};
-    border-radius: 50px;
+    width: ${props => props.active ? "100%" : "70%"};;
+    border-right: ${props => props.active ? "20px solid rgba(255,255,255,1)" : "none"};
+    border-radius: ${props => props.active ? "50px 0px 0px 50px " : "50px"};
     margin-left: 15%;
     background-color: #FFFFFF;
     color: #000000;
@@ -23,10 +26,7 @@ const Add = styled.div`
     cursor: pointer;
     transition: 0.3s all ease-in-out;
 
-    &:hover {
-        background-color: ${props => props.active ? "#FFFFFF" : "rgba(0,0,0,0.3)"};
-        color: ${props => props.active ? "#000000" : "#FFFFF"};
-    }
+    &:  ${props => props.active ? "hover { background-color: #FFFFFF; color: #000000 }" : "hover {     background-color: #000000; color: #FFFFFF }"};
 `
 const AddTxt = styled.h1`
     width: 100%;
@@ -40,17 +40,24 @@ const AddTxt = styled.h1`
 const Menu = () => {
 
     const [dash, setDash] = useContext(DashContext);
+    const {width} = dimension();
 
-    return (
-        <Container>
-            <Link to="/add"><Add active={dash==1 ? true : false}>
-                <AddTxt>Add Item</AddTxt>
-            </Add></Link>
-            <Link to="/orders"><MenuLink title="Orders" icon={'orders.svg'} active={dash==2 ? true : false}/></Link>
-            <Link to="/cart"><MenuLink title="Cart" icon={'cart.svg'} active={dash==3 ? true : false}/></Link>
-            <MenuLink title="Settings" icon={'settings.svg'} active={dash==4 ? true : false}/>
-        </Container>
-    )
+    if(width>1000){
+        return (
+            <Container>
+                <Link to="/dashboard/add"><Add active={dash==1 ? true : false}>
+                    <AddTxt>Add Item</AddTxt>
+                </Add></Link>
+                <Link to="/dashboard"><MenuLink title="Orders" icon={'orders.svg'} active={dash==2 ? true : false}/></Link>
+                <Link to="/dashboard/cart"><MenuLink title="Cart" icon={'cart.svg'} active={dash==3 ? true : false}/></Link>
+                <a onClick={() => {firebase.auth().signOut(); window.location.href="/login";}}><MenuLink title="Settings" icon={'settings.svg'} active={dash==4 ? true : false}/></a>
+            </Container>
+        )
+    }
+    else
+        return(null)
+
+    
 }
 
 export default Menu

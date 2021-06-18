@@ -1,0 +1,35 @@
+.privacy_policy{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+body h1{
+  color: #303378;
+  font-weight: bolder;
+}
+
+body h2{
+  color: #303378;
+  font-weight: bold;
+}
+
+strong{
+  color: black;
+  font-weight: 600;
+}
+
+strong:hover{
+  text-decoration: underline;
+}
+
+.privBg{
+  background-image: url("../OtherFiles/privacy.png");
+}
+
+.TermBg{
+  background-image: url("../OtherFiles/terms.png");
+}
+
+.RefundBg{
+  background-image: url("../OtherFiles/refund.png");
+}

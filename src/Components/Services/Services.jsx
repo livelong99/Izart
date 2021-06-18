@@ -5,6 +5,8 @@ import React, {useRef} from 'react';
 import OurWork from "../Home/ourWork";
 import Form from "./form";
 import Info from "./infograph";
+import NavigationBar from "../PageComp/navigationBar.jsx"
+import Footer from "../PageComp/Footer";
 import {
   Link
 } from "react-router-dom";
@@ -35,6 +37,8 @@ const Service = ({data}) => {
     }
 
     return(
+      <>
+      <NavigationBar></NavigationBar>
         <div class="serv">
           <div class="land">
           <div class="section01">
@@ -68,29 +72,29 @@ const Service = ({data}) => {
                 </div>
 
                 <Info />
-                
+
                 {data.sugg.length > 0 ? (
                 <div class="suggestions">
-                <div class="suggHd"><p>Articles</p></div>
+                <div class="suggHd"><p>{data.suggestedtopic}</p></div>
                 <div class="itms">
                   {data.sugg.map(sg => {
                     if(sg.ino == 1){
                       return(
                         <div ref={hovI1} onMouseEnter={() => {sugHov(hovI1)}} onMouseLeave={() => {sugHovN(hovI1)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div onClick={() => { document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="itmBody">
-                        <Link to={"/services/" + sg.link}>{sg.title}</Link>  
+                        <Link to={"/services/" + sg.link}>{sg.title}</Link>
                         </div>
                     </div>)
                     }
                     else if(sg.ino == 2){
                       return(<div ref={hovI2} onMouseEnter={() => {sugHov(hovI2)}} onMouseLeave={() => {sugHovN(hovI2)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div onClick={() => { document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="itmBody">
-                      <Link to={"/services/" + sg.link}>{sg.title}</Link>  
+                      <Link to={"/services/" + sg.link}>{sg.title}</Link>
                       </div>
                     </div>)
-  
+
                     }
                     else if(sg.ino == 3){
                       return(<div ref={hovI3} onMouseEnter={() => {sugHov(hovI3)}} onMouseLeave={() => {sugHovN(hovI3)}} class="itm"><img id="sgI" src="../Images/suggestion.svg"/><div onClick={() => { document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}} class="itmBody">
-                      <Link to={"/services/" + sg.link}>{sg.title}</Link>  
+                      <Link to={"/services/" + sg.link}>{sg.title}</Link>
                       </div>
                     </div>)
                     }
@@ -105,6 +109,9 @@ const Service = ({data}) => {
               </div>
               ) : null}
         </div>
+        <a data-aos="fade-up" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+919711106474"><img src="../Images/whatsapp.svg" /></a>
+        <Footer />
+        </>
     )
 }
 

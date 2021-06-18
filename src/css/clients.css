@@ -1,0 +1,76 @@
+.clients{
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-45%);
+  margin-top: 5%;
+}
+
+.client1{
+  display: inline-block;
+  margin: 27px;
+}
+
+.client1 img{
+  width: 160px;
+  vertical-align: middle;
+}
+
+.client2{
+  display: inline-block;
+  margin: 27px;
+}
+
+.client2 img{
+  width: 160px;
+  vertical-align: middle;
+}
+
+.client2 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.client2:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+@media screen and (max-width:960px) {
+  .clients{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-35%);
+    margin-top: 100px;
+  }
+  }
+
+  @media screen and (max-width:600px) {
+
+    .clients{
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 100px;
+      transform: none;
+    }
+
+    .client1{
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .client2{
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+
+  }

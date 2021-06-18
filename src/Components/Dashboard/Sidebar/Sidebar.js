@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Menu from './Menu/Menu'
 import Profile from './Profile'
 // import ToggleSwitch from './ToggleSwitch'
+import dimension from "../../../OtherFiles/Dimensions"
 
 const Container = styled.div`
     background-color: #303778;
@@ -21,13 +22,22 @@ const Container = styled.div`
 
 const Sidebar = () => {
 
-    return (
-        <Container>
+
+    
+    const {width} = dimension();
+
+    if(width>1000){
+        return (
+            <Container>
             <Profile />
             <Menu />
             {/* <ToggleSwitch /> */}
         </Container>
-    )
+        )
+    }
+    else
+        return(null)
+
 }
 
 export default Sidebar

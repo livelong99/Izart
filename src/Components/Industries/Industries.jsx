@@ -5,6 +5,8 @@ import React, {useRef} from 'react';
 import OurWork from "../Home/ourWork";
 import Form from "../Services/form";
 import Info from "../Services/infograph";
+import NavigationBar from "../PageComp/navigationBar.jsx"
+import Footer from "../PageComp/Footer";
 import {
   Link
 } from "react-router-dom";
@@ -31,6 +33,8 @@ const Industries = ({data}) => {
     }
 
     return(
+      <>
+      <NavigationBar></NavigationBar>
         <div class="serv">
           <div class="land">
           <div class="section01">
@@ -64,6 +68,9 @@ const Industries = ({data}) => {
 
                 <Info />
         </div>
+        <a data-aos="fade-up" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+919711106474"><img src="../Images/whatsapp.svg" /></a>
+        <Footer />
+        </>
     )
 }
 

@@ -85,7 +85,7 @@
     font-size: 45px;
     line-height: 45px;
   }
-  
+
   .serv .land .section01 .mainTxt .subhead{
     font-size: 20px;
     margin-top: -25px;
@@ -232,7 +232,7 @@
 }
 
 .graphics .blk img.tri-1{
-  
+
   z-index: 1;
     height: 100px;
     margin-top:150px;
@@ -256,7 +256,7 @@
     margin-top: 20px;
     font-size: 27px;
     font-weight: 800;
-    font-family: 'League Spartan Variable';
+    font-family: 'Times New Roman';
     color: #303778;
 }
 
@@ -338,7 +338,7 @@
     margin-top: 20px;
     font-size: 27px;
     font-weight: 800;
-    font-family: 'League Spartan Variable';
+    font-family: 'Times New Roman';
     color: #303778;
 }
 
@@ -351,7 +351,7 @@
     font-weight: 400;
     font-family: 'Sanchez';
     color: #707172;
-}  
+}
 }
 
 
@@ -436,7 +436,7 @@ iframe {
 
 .contact1-form-title {
   display: block;
-  font-family: "League Spartan Variable";
+  font-family: "Times New Roman";
   font-weight: 900;
   font-size: 35px;
   color: #ffffff;
@@ -721,7 +721,7 @@ textarea.input1 + .shadow-input1 {
   color: #FEB848;
   padding-top:10px;
   text-align: center;
-  font-family: 'League Spartan Variable';
+  font-family: 'Times New Roman';
   width: 100%;
   font-size: 80px;
   font-style: normal;

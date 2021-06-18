@@ -15,24 +15,23 @@ import {
 
 const Container = styled.div`
     width: auto;
-    margin-left: 16rem;
+    margin-left: 20rem;
     position: relative;
-    padding: 0 4rem;
+    padding: 0 1.8rem;
 `
 
 
-const Main = () => {
+
+const Main = ({sel}) => {
 
     const [dash, setDash] = useContext(DashContext);
 
     return (           
             <Container>
                 <Nav />
-                <Switch>
-                    <Route path="/add" exact component={AddItm} />
-                    <Route path="/orders" exact component={Orders} />
-                    <Route path="/cart" exact component={Cart} />
-                </Switch>
+                    {(sel == 1) ? <AddItm /> : <div />}
+                    {(sel == 2) ? <Orders /> : <div />}
+                    {(sel == 3) ? <Cart /> : <div />}
             </Container>
     )
 }

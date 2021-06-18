@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  Link
+} from "react-router-dom";
+
 
 const OurWork = () => {
     return(
@@ -18,9 +22,8 @@ const OurWork = () => {
           <div class="subheadWork">
             Latest blogs from izart works
           </div>
-          <div class="readmore1">
-            Read more
-          </div>
+          <a href="#"><div class="readmore1">read more</div></a>
+
         </div>
         <div class="containerforourwork">
         <div class="headOurWork">

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import styled from 'styled-components'
+import {UserContext} from "../../../Store";
 
 const Container = styled.div`
     display: flex;
@@ -22,10 +23,11 @@ const MessageIcon = styled.img`
     margin-right: 30px; 
 `
 const Nav = () => {
+    const [User, setUser] = useContext(UserContext);
     return (
         <Container>
-            <MessageIcon src="Images/not.svg"></MessageIcon>
-            <ProfileImg src="Images/portrait.jpg" />
+            <MessageIcon src="../Images/not.svg"></MessageIcon>
+            <ProfileImg src={User.photoURL} />
         </Container>
     )
 }

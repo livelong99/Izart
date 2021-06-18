@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: 'League Spartan Variable';
+  font-family: 'Times New Romans';
   src: url('./fonts/LeagueSpartan-2.220/variable/WOFF2/LeagueSpartan-VF.woff2') format('woff2-variations');
   font-weight: 200 900;
 }
+
+
 
 
 body{
@@ -48,6 +50,11 @@ a{
   width: 100%;
 }
 
+.landmain{
+  z-index: -1;
+  background-color: rgba(48, 55, 120, 0.2);
+  width: 100%;
+}
 
 .section01{
   position: relative;
@@ -55,6 +62,51 @@ a{
   left: 10%;
   padding-top: 100px;
   padding-bottom: 100px;
+  z-index: -0.8;
+}
+
+.home01{
+  position: relative;
+  background-color: rgba(48, 55, 120, 0.2);
+  width: 100%;
+  height: 100vh;
+  left: 0%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  padding-left: 10%;
+  z-index: -0.8;
+}
+
+
+
+.VidBg{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.VidBg video{
+  width:100%;
+}
+
+.about01{
+  position: relative;
+  background-image: url("../OtherFiles/aboutbg.png");
+  width: 100%;
+  left: 0%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  padding-left: 10%;
   z-index: -0.8;
 }
 
@@ -75,7 +127,13 @@ a{
 .section01 .mainIll img{
   margin-top: 30px;
   width: 100%;
+  border-radius: 20px;
+  filter: drop-shadow(0.1rem 0.3rem 0.5rem rgba(255,255,255,0.1));
   transition: all 0.3s ease-in;
+}
+
+.home01 .mainIll img{
+  opacity: 0;
 }
 
 
@@ -84,7 +142,7 @@ a{
   align-items: center;
   color: #FFFFFF;
   text-align: left;
-  font-family: 'League Spartan Variable';
+  font-family: 'TNR-bold';
   width: 100%;
   font-size: 60px;
   font-style: normal;
@@ -109,7 +167,10 @@ a{
   font-style: normal;
   font-weight: 500;
 }
-
+.subhead h3{
+  margin-top:-20px;
+  margin-right: 20%;
+}
 .subhead p{
   margin-top:-60px;
   margin-right: 20%;
@@ -167,9 +228,9 @@ a{
 
 .section02H1{
   position: relative;
-  color: #303778;
+  color: rgb(48, 55, 120);
   text-align: center;
-  font-family: 'League Spartan Variable';
+  font-family: 'TNR-bold';
   width: 100%;
   font-size: 80px;
   font-style: normal;
@@ -182,7 +243,19 @@ a{
   color: #FEB848;
   padding-top: 50px;
   text-align: center;
-  font-family: 'League Spartan Variable';
+  font-family: 'TNR-bold';
+  width: 100%;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.section02HAbout{
+  position: relative;
+  color: #303778;
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'TNR-bold';
   width: 100%;
   font-size: 80px;
   font-style: normal;
@@ -217,7 +290,7 @@ a{
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: left;
-  font-family: 'League Spartan Variable';
+  font-family: 'TNR-bold';
   width: 100%;
   font-size: 55px;
   font-weight: 800;
@@ -271,28 +344,33 @@ a{
 
 .section02 .service .content .al-right {
   text-align: right;
+
 }
 
 .section02 .service .illus{
   display: inline-block;
-  width: 40%;
+  width: 30%;
+  margin-left: 10%;
+  align-content: center;
 }
 
 .section02 .service .illus img{
   position: absolute;
   filter: drop-shadow(1rem 1rem 1rem grey);
   top: 60px;
-  height: 300px;
-  margin-left: 150px;
+  width: 350px;
+  align-self: center;
+  border-radius: 20px;
+}
+
+.section02 .service .lefti{
+  margin-left: 0px;
+  margin-right: 10%;
 }
 
 .section02 .service .illus .left{
-  margin-left: 0px;
   top: 80px;
 }
-
-
-
 
 .steps{
   padding-bottom: 100px;
@@ -324,7 +402,7 @@ a{
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: left;
-  font-family: 'League Spartan Variable';
+  font-family: 'TNR-bold';
   width: 80%;
   font-size: 55px;
   font-weight: 800;
@@ -426,7 +504,7 @@ a{
   font-size: 90px;
   line-height: 105px;
   font-weight: 1000;
-  font-family: "League Spartan Variable";
+  font-family: "TNR-bold";
   color: #303778;
 }
 
@@ -465,7 +543,7 @@ a{
 }
 .headOurWork{
   text-align: left;
-  font-family: 'League Spartan Variable';
+  font-family: 'Times New Romans';
   font-size: 30px;
   font-weight: 900;
   color: #303778;
@@ -517,7 +595,7 @@ a{
 .testimonials .inner h1{
   color: #303778;
   text-align: center;
-  font-family: 'League Spartan Variable';
+  font-family: 'TNR-bold';
   width: 100%;
   font-size: 80px;
   font-style: normal;
@@ -813,14 +891,82 @@ footer .container .sec.aboutus p{
     background-color: #ffffff;
     padding-top: 0px;
     border-radius: 20px;
-    width: 90%;
-    margin-left: -10%;
+    width: 100%;
+    margin-left: 0%;
     margin-bottom: 100px;
     padding-bottom: 0px;
   }
 
   .contactUsForm {
     width: 100%;
+    margin-left: 0%;
     display: block;
+  }
+}
+
+@media (max-width: 500px){
+  .homeContactUs {
+    background-color: #ffffff;
+    padding-top: 0px;
+    border-radius: 20px;
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 100px;
+    padding-bottom: 0px;
+  }
+
+  .contactUsForm {
+    width: 100%;
+    margin-left:-8%;
+    display: block;
+  }
+}
+
+
+
+.column1{
+  padding-top: 5%;
+  display: inline-block;
+  width: 30%;
+}
+
+
+.counters{
+  height: auto;
+  background-color: #303778;
+  align-items: center;
+  width: 100%;
+  padding-left: 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.d1{
+  display: inline-block;
+  font-size: 35px;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  color: #FEB848;
+  font-family: 'TNR-bold';
+}
+
+.head1{
+  font-size: 40px;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  font-family: 'TNR-bold';
+}
+
+@media (max-width: 500px){
+
+  .column1{
+    padding-top: 5%;
+    display: inline-block;
+    width: 30%;
+    min-width: 350px;
   }
 }

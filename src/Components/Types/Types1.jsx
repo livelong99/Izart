@@ -1,6 +1,8 @@
 import React from 'react';
 import Form from "../Services/form";
 import dimensions from "../../OtherFiles/Dimensions";
+import NavigationBar from "../PageComp/navigationBar.jsx"
+import Footer from "../PageComp/Footer";
 
 const Types = ({data}) => {
     
@@ -63,6 +65,8 @@ const Types = ({data}) => {
     
 
     return(
+        <>
+        <NavigationBar></NavigationBar>
         <div class="types">
             <div class="darkBg">
             <div class="section01">
@@ -92,6 +96,9 @@ const Types = ({data}) => {
             <div class="contactUsForm"><Form /></div>
             </div>
         </div>
+        <a data-aos="fade-up" data-aos-delay="2500" data-aos-offset="50" data-aos-duration="500" class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+919711106474"><img src="../Images/whatsapp.svg" /></a>
+        <Footer />
+        </>
     )
 }
 

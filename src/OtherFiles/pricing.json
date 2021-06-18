@@ -1,0 +1,310 @@
+{
+    "Blog": {
+        "type1":[
+            {
+                "deliveryName": "Normal",
+                "days": 3,
+                "charge": 1500
+            },
+            {
+                "deliveryName": "Express",
+                "days": 2,
+                "charge": 2000
+            }
+        ],
+        "type2":[
+            {
+                "deliveryName": "Normal",
+                "days": 4,
+                "charge": 3000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 2,
+                "charge": 4000
+            }
+        ],
+        "type3":[
+            {
+                "deliveryName": "Normal",
+                "days": 5,
+                "charge": 6000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 3,
+                "charge": 7000
+            }
+        ],
+        "type4":[
+            {
+                "deliveryName": "Normal",
+                "days": 7,
+                "charge": 8000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 3,
+                "charge": 9000
+            }
+        ],
+        "message": ""
+    },
+    
+    "Technical_Write_Up": {
+        "type1":[
+            {
+                "deliveryName": "Normal",
+                "days": 3,
+                "charge": 1500
+            },
+            {
+                "deliveryName": "Express",
+                "days": 2,
+                "charge": 2000
+            }
+        ],
+        "type2":[
+            {
+                "deliveryName": "Normal",
+                "days": 4,
+                "charge": 3000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 2,
+                "charge": 4000
+            }
+        ],
+        "type3":[
+            {
+                "deliveryName": "Normal",
+                "days": 5,
+                "charge": 6000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 3,
+                "charge": 7000
+            }
+        ],
+        "type4":[
+            {
+                "deliveryName": "Normal",
+                "days": 7,
+                "charge": 8000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 3,
+                "charge": 9000
+            }
+        ],
+        "message": ""
+    },
+    "Article": {
+        "type1":[
+            {
+                "deliveryName": "Normal",
+                "days": 3,
+                "charge": 1500
+            },
+            {
+                "deliveryName": "Express",
+                "days": 2,
+                "charge": 2000
+            }
+        ],
+        "type2":[
+            {
+                "deliveryName": "Normal",
+                "days": 4,
+                "charge": 3000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 2,
+                "charge": 4000
+            }
+        ],
+        "type3":[
+            {
+                "deliveryName": "Normal",
+                "days": 5,
+                "charge": 6000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 3,
+                "charge": 7000
+            }
+        ],
+        "type4":[
+            {
+                "deliveryName": "Normal",
+                "days": 7,
+                "charge": 8000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 3,
+                "charge": 9000
+            }
+        ],
+        "message": ""
+    },
+    "Press_Release":{
+        "type1":[
+            {
+                "deliveryName": "Normal",
+                "days": 3,
+                "charge": 2500
+            },
+            {
+                "deliveryName": "Express",
+                "days": 2,
+                "charge": 3000
+            },
+            {
+                "deliveryName": "Urgent",
+                "days": 1,
+                "charge": 3500
+            }
+        ],
+        "message": ""
+    },
+    "Newsletter":{
+        "type1":[
+            {
+                "deliveryName": "Normal",
+                "days": 4,
+                "charge": 2000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 3,
+                "charge": 2500
+            },
+            {
+                "deliveryName": "Urgent",
+                "days": 2,
+                "charge": 3000
+            }
+        ],
+        "message": ""
+    },
+    "Case_Study":{
+        "message":"The objective, format, and the volume of content of every case study varies for every client. So please fill out this form with your project details and we will get in touch with you with your personalised pricing plan."
+    },
+    "Whitepaper":{
+        "type1":[
+            {
+                "deliveryName": "Normal",
+                "days": 7,
+                "charge": 4500
+            },
+            {
+                "deliveryName": "Fast",
+                "days": 5,
+                "charge": 5500
+            },
+            {
+                "deliveryName": "Express",
+                "days": 3,
+                "charge": 6500
+            },
+            {
+                "deliveryName": "Urgent",
+                "days": 1,
+                "charge": 7500
+            }
+        ],
+        "type2":[
+            {
+                "deliveryName": "Normal",
+                "days": 9,
+                "charge": 7500
+            },
+            {
+                "deliveryName": "Express",
+                "days": 7,
+                "charge": 8500
+            },
+            {
+                "deliveryName": "Urgent",
+                "days": 5,
+                "charge": 9500
+            }
+        ],
+        "type3":[
+            {
+                "deliveryName": "Normal",
+                "days": 10,
+                "charge": 15000
+            },
+            {
+                "deliveryName": "Express",
+                "days": 7,
+                "charge": 17000
+            },
+            {
+                "deliveryName": "Urgent",
+                "days": 5,
+                "charge": 18000
+            }
+        ],
+        "message": ""
+    },
+    "Social_Media_Post":{
+        "message":"Every brand has a unique identity online primarily through the means of Social Media. Different identities equate to different requirements. Please fill out this form and detail your requirements and we will get in touch with you in 3-5 hours with your personalised pricing plan."
+    },
+    "Product_Description":{
+        "message": "Every brand has unique product descriptions. Please fill out this form and detail your requirements and we will get in touch with you in 3-5 hours with your personalised pricing plan."
+    },
+    "Website_Content":{
+        "type1":[
+            {
+                "deliveryName": "Normal",
+                "days": 3,
+                "lcharge": 3000,
+                "nlcharge":2000 ,
+                "charge":0
+            },
+            {
+                "deliveryName": "Express",
+                "days": 2,
+                "lcharge": 4000,
+                "nlcharge":3000,
+                "charge":0
+            },
+            {
+                "deliveryName": "Urgent",
+                "days": 1,
+                "lcharge": 5000,
+                "nlcharge":4000,
+                "charge":0
+            }
+        ]
+    },
+    "Advertisement_Script":{
+        "message":"The scope of an Advertisement differs with context. We don’t operate with one price for all when you could be paying less. So fill up the project description box, and our Advertising Executive will get in touch with you."
+    },
+    "SOP":{
+        "message":"An ideal SoP is the cornerstone of your candidature in the university of your dreams. We want to make sure that it’s perfectly written just for you. Hence, we don’t have a fixed pricing plan for SoP. Please fill in all the relevant details in the project description box and our Admission Consultant will get in touch with you."
+    },
+    "LOR":{
+        "message":"Working on drafting the perfect LoR will require a personal connection with you. Hence, please fill out the details in the Project Description, and our writers will get in touch with you."
+    },
+    "Resume":{
+        "message":"One piece of paper between you and your dream job. Working on such a document requires personal connection with the client, hence, please fill out the details in the Project Description, and our Corporate Executive will get in touch with you."
+    },
+    "Cover_Letter":{
+        "message": "Working on a cover letter requires personal connection with the client, hence, please fill out the details in the Project Description, and our writers will get in touch with you."
+    },
+    "Research_Paper":{
+        "message": "Working on a Research Paper requires niche knowledge and a deeper understanding of your vertical. Hence, please fill out the details in the Project Description, and our Subject Matter Experts will get in touch with you."
+    },
+    "Custom":{
+        "message": "Do you want a deliverable that we did not cover here? No worries, we are nothing if flexible. Please mention your project details, and our Content Strategist will reach out to you to discuss pricing and timeline"
+    }
+}

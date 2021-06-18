@@ -5,6 +5,7 @@ import Dashboard from './Components/Dashboard'
 import Sign from './Components/Dashboard/signIn-signUp'
 import Loader from './Components/Home/preloader'
 import reportWebVitals from './reportWebVitals';
+
 import Store from "./Store";
 import {
   BrowserRouter as Router,
@@ -12,14 +13,27 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import firebase from "firebase/app";
+import "firebase/auth";
+import {
+  FirebaseAuthProvider
+} from "@react-firebase/auth";
+import { FirestoreProvider } from "@react-firebase/firestore";
+import {config} from "./config"
+
+firebase.initializeApp(config);
 
 ReactDOM.render(
   <React.StrictMode>
+    <FirebaseAuthProvider {...config} firebase={firebase}>
+      <FirestoreProvider  {...config} firebase={firebase}>
     <Router>
     <Store>
       <App />
     </Store>
     </Router>
+    </FirestoreProvider>
+    </FirebaseAuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

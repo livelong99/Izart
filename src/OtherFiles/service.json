@@ -10,6 +10,7 @@
       "title": "Facebook",
       "subHead": "Facebook has over 2.45 BILLION monthly users. How many of them are your brand’s consumers?",
       "illus": "social.svg",
+      "suggestedtopic": "Social Media Content",
       "sugg":[
         {
           "ino": 1,
@@ -39,6 +40,7 @@
       "title": "Twitter",
       "subHead": "Scaling up businesses, 280 characters at a time.",
       "illus": "social.svg",
+      "suggestedtopic": "Social Media Content",
       "sugg":[
         {
           "ino": 1,
@@ -67,6 +69,7 @@
       "title": "LinkedIn",
       "subHead": "In the corporate ecosystem, LinkedIn is nothing less than a goldmine ",
       "illus": "social.svg",
+      "suggestedtopic": "Social Media Content",
       "sugg":[
         {
           "ino": 1,
@@ -95,6 +98,7 @@
     "title": "Instagram",
     "subHead": "Gone are the days when Instagram was just a photo sharing platform. Over the years, Instagram has transformed into one of the biggest online marketplaces. ",
     "illus": "social.svg",
+    "suggestedtopic": "Social Media Content",
     "sugg":[
       {
         "ino": 1,
@@ -167,6 +171,7 @@
     "title": "Cover Letter",
     "subHead": "Hire the best writers to write your story for you. ",
     "illus": "academics.svg",
+    "suggestedtopic": "Academics",
     "sugg":[
       {
         "ino": 1,
@@ -200,6 +205,7 @@
     "title": "Resume & CV",
     "subHead": "One page to change your life. Hire the best writers to stand out!",
     "illus": "academics.svg",
+    "suggestedtopic": "Academics",
     "sugg":[
       {
         "ino": 1,
@@ -233,6 +239,7 @@
     "title": "Research Paper",
     "subHead": "Get the recognition your research deserves. ",
     "illus": "academics.svg",
+    "suggestedtopic": "Academics",
     "sugg":[
       {
         "ino": 1,
@@ -266,6 +273,7 @@
     "title": "Statement Of Purpose (SOP)",
     "subHead": "Few words stand between you and your dream college. Hire the BEST academic writers to help you write the ones that guarantee your admission.  ",
     "illus": "academics.svg",
+    "suggestedtopic": "Academics",
     "sugg":[
       {
         "ino": 1,
@@ -299,6 +307,7 @@
     "title": "Letter Of Recommendation (LOR)",
     "subhead": "",
     "illus": "academics.svg",
+    "suggestedtopic": "Academics",
     "sugg":[
       {
         "ino": 1,
@@ -337,6 +346,7 @@
     "title": "Articles",
     "subHead": "Convert passive readers to active consumers with premium Articles. ",
     "illus": "article.svg",
+    "suggestedtopic": "Articles",
     "sugg":[
       {
         "ino": 1,
@@ -372,6 +382,7 @@
     "title": "SEO Articles",
     "subHead": "Get your content discovered by our premium onsite SEO Optimization ",
     "illus": "article.svg",
+    "suggestedtopic": "Articles",
     "sugg":[
       {
         "ino": 1,
@@ -406,6 +417,7 @@
     "title": "Technical Articles",
     "subHead": "We understand your technical rigmaroles comprehensively so that we can explain it easily. ",
     "illus": "article.svg",
+    "suggestedtopic": "Articles",
     "sugg":[
       {
         "ino": 1,
@@ -439,6 +451,7 @@
     "title": "Informative Articles",
     "subHead": "Provide value to your readers, build a reputable brand, and scale up your business. ",
     "illus": "article.svg",
+    "suggestedtopic": "Articles",
     "sugg":[
       {
         "ino": 1,
@@ -475,6 +488,7 @@
     "title": "Product Based Articles",
     "subHead": "Market your product the right way. Use our effective product marketing services aided by Izart’s finest writers. ",
     "illus": "article.svg",
+    "suggestedtopic": "Articles",
     "sugg":[
       {
         "ino": 1,

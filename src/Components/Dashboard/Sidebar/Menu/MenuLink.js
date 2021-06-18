@@ -44,7 +44,7 @@ const MenuLink = ({ title, active, icon }) => {
 
     return (
         <Container active={active}>
-            <Span active={active} src={"Images/" + icon}></Span>
+            <Span active={active} src={"../Images/" + icon}></Span>
             <Title active={active}>{title}</Title>
         </Container>
     )

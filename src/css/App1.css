@@ -17,6 +17,20 @@
     padding-bottom: 50px;
   }
 
+  .home01{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: none;
+    padding-top: 250px;
+    padding-bottom: 50px;
+  }
+
+  .VidBg video{
+    height:100%;
+    width: auto;
+  }
+
   .section01 .mainTxt{
     width: 100%;
   }
@@ -35,28 +49,32 @@
     height: 100%;
   }
 
+  .home01 .mainIll img{
+    opacity: 1;
+  }
+
   .section01 .mainTxt .headone{
-    font-size: 60px;
+    font-size: 65px;
     text-align: center;
     line-height: 70px;
     width: 100%;
   }
 
   .subhead p{
-    margin-top: 0px;
+    margin-top: 15px;
     margin-right: 10%;
     margin-left: 10%;
   }
 
   .section01 .mainTxt .subhead{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
   }
 
   .section02H, .section02H1{
     margin-top: 100px;
     margin-bottom: -70px;
-    font-size: 60px; 
+    font-size: 60px;
   }
 
   .section02{
@@ -107,19 +125,19 @@
   .section02 .service .illus{
     width: 100%;
     margin-top:0px;
+    margin-left: 0px;
   }
 
   .section02 .service .illus img{
     position: relative;
     left: 50%;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 
   .section02 .service .illus .left{
     position: relative;
     left: 50%;
-    transform: translateX(-100%);
-    margin-left: 150px;
+    transform: translateX(-50%);
     top: 60px;
   }
 
@@ -165,11 +183,11 @@
   .testimonials .inner h1{
     color: #303778;
     text-align: center;
-    font-family: 'League Spartan Variable';
+    font-family: 'Times New Roman';
     width: 100%;
     font-size: 60px;
     font-style: normal;
-    font-weight: 900; 
+    font-weight: 900;
   }
 
   .OuterDiv{
@@ -206,7 +224,7 @@
 @media (max-width: 450px){
 
   .section01{
-    padding-top: 10vh;
+    padding-top: 20vh;
   }
 
   .section01 .mainIll{
@@ -222,10 +240,10 @@
     font-size: 45px;
     line-height: 45px;
   }
-  
+
   .section01 .mainTxt .subhead{
     font-size: 20px;
-    margin-top: -25px;
+    margin-top: -10px;
   }
 
   .subhead p{
@@ -235,7 +253,7 @@
 
   .section02H{
     margin-top: 30px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
   }
 
   .section02 .service .content .more{
