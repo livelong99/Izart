@@ -4,23 +4,23 @@ import {UserContext} from "../../../Store";
 
 
 const Container = styled.div`
-    margin-top: 3rem;
+    margin-top: 20px;
+    border-bottom: 5px solid #FFFFFF;
 `
 
 const ProfileImg = styled.img`
-    height: 8rem;
-    width: 8rem;
-    border-radius: 100%;
+    width: 70%;
     margin-left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    margin-bottom:20px;
 `
 const ProfileName = styled.h1`
-    font-size: 30px;
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
-    font-family: "League Spartan Variable";
+    text-align:center;
+    width:100%;
     color: #FFFFFF;
+    font-size: 50px;
+    font-family: "League Spartan Variable";
+    font-weight: 900;
 `
 
 const Profile = () => {
@@ -32,8 +32,8 @@ const Profile = () => {
 
     return (
         <Container>
-            <ProfileImg src={User.photoURL} />
-            <ProfileName>{User.displayName}</ProfileName>
+            <ProfileImg src="../nav_icon.png" />
+            {/* <ProfileName>izart</ProfileName> */}
         </Container>
     )
 }

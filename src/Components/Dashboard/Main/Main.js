@@ -4,6 +4,7 @@ import Nav from './Nav'
 import AddItm from "./AddItem";
 import Cart from "./Cart";
 import Orders from "./Orders";
+import Account from "./Account";
 import {DashContext} from "../../../Store";
 import {
     BrowserRouter as Router,
@@ -13,26 +14,19 @@ import {
   } from "react-router-dom";
 
 
-const Container = styled.div`
-    width: auto;
-    margin-left: 20rem;
-    position: relative;
-    padding: 0 1.8rem;
-`
-
-
 
 const Main = ({sel}) => {
 
     const [dash, setDash] = useContext(DashContext);
 
     return (           
-            <Container>
+            <div className="mainContainer">
                 <Nav />
                     {(sel == 1) ? <AddItm /> : <div />}
                     {(sel == 2) ? <Orders /> : <div />}
                     {(sel == 3) ? <Cart /> : <div />}
-            </Container>
+                    {(sel == 4) ? <Account /> : <div />}
+            </div>
     )
 }
 

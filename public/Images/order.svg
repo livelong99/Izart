@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="order" transform="translate(-1 -1)">
+    <path id="Path_1408" data-name="Path 1408" d="M18,6V3L16,1H8L6,3V6H1V21a2,2,0,0,0,2,2H21a2,2,0,0,0,2-2V6ZM9,4h6V6H9Z" fill="#fff"/>
+    <g id="Group_240" data-name="Group 240">
+      <path id="Path_1409" data-name="Path 1409" d="M9,1h6V4H9Z" fill="#303778" opacity="0.1"/>
+      <path id="Path_1410" data-name="Path 1410" d="M9,6V1H8L6,3V6Z" fill="#303778" opacity="0.2"/>
+      <path id="Path_1411" data-name="Path 1411" d="M1,6V21a2,2,0,0,0,2,2H21a2,2,0,0,0,2-2V6ZM12,20a5.5,5.5,0,1,1,5.5-5.5A5.5,5.5,0,0,1,12,20Z" fill="#303778" opacity="0.1"/>
+      <path id="Path_1412" data-name="Path 1412" d="M12,9a5.5,5.5,0,1,0,5.5,5.5A5.5,5.5,0,0,0,12,9Zm-1,8L9.146,15.146l.708-.707L11,15.586l3.146-3.147.708.707Z" fill="#303778" opacity="0.3"/>
+      <path id="Path_1413" data-name="Path 1413" d="M11,17,9.146,15.147l.708-.708L11,15.586l3.146-3.147.708.708Z" fill="#303778" opacity="0.8"/>
+    </g>
+  </g>
+</svg>

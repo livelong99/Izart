@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState} from 'react'
 import MenuLink from './MenuLink'
 import styled from 'styled-components'
 import {DashContext} from "../../../../Store";
@@ -9,9 +9,9 @@ import {
 
 import dimension from "../../../../OtherFiles/Dimensions"
 
-
+//Desktop
 const Container = styled.div`
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     width: 100%;
 `
 
@@ -36,6 +36,17 @@ const AddTxt = styled.h1`
     text-align: center;
     font-family: "League Spartan Variable";
 `
+//Mobile
+
+const MobileContainer= styled.div`
+    margin-top: 1rem;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+`
+
+
+
 
 const Menu = () => {
 
@@ -45,19 +56,27 @@ const Menu = () => {
     if(width>1000){
         return (
             <Container>
-                <Link to="/dashboard/add"><Add active={dash==1 ? true : false}>
-                    <AddTxt>Add Item</AddTxt>
-                </Add></Link>
-                <Link to="/dashboard"><MenuLink title="Orders" icon={'orders.svg'} active={dash==2 ? true : false}/></Link>
-                <Link to="/dashboard/cart"><MenuLink title="Cart" icon={'cart.svg'} active={dash==3 ? true : false}/></Link>
-                <a onClick={() => {firebase.auth().signOut(); window.location.href="/login";}}><MenuLink title="Settings" icon={'settings.svg'} active={dash==4 ? true : false}/></a>
+                <Link to="/dashboard/add"><MenuLink title="Orders" icon={'add'} active={dash==1 ? true : false} last={0}/></Link>                
+                <Link to="/dashboard"><MenuLink title="Orders" icon={'order'} active={dash==2 ? true : false} last={0}/></Link>
+                <Link to="/dashboard/cart"><MenuLink title="Cart" icon={'cart'} active={dash==3 ? true : false} last={0}/></Link>
+                <Link to="/dashboard/account"><MenuLink title="Account" icon={'account'} active={dash==4 ? true : false} last={0}/></Link>
+                <a onClick={() => {firebase.auth().signOut(); window.location.href="/login";}}><MenuLink title="Account" icon={'logout'} last={1}/></a>
             </Container>
         )
     }
     else
-        return(null)
+        return(
+            <MobileContainer>
+                <Link to="/dashboard/add"><MenuLink title="Orders" icon={'add'} active={dash==1 ? true : false}/></Link>
+                <Link to="/dashboard"><MenuLink title="Orders" icon={'order'} active={dash==2 ? true : false}/></Link>
+                <Link to="/dashboard/cart"><MenuLink title="Cart" icon={'cart'} active={dash==3 ? true : false}/></Link>
+                <Link to="/dashboard/account"><MenuLink title="Account" icon={'account'} active={dash==4 ? true : false}/></Link>
+            </MobileContainer>
+        )
 
     
 }
 
 export default Menu
+
+//<a onClick={() => {firebase.auth().signOut(); window.location.href="/login";}}><MenuLink title="Settings" icon={'settings'} active={dash==4 ? true : false}/></a>

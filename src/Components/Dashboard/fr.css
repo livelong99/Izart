@@ -1,14 +1,21 @@
 
 .form-style-5{
-    width: 80%;
+    width: 90%;
 	padding: 10px 20px;
 	background: #f4f7f8;
-	margin: 10px auto;
+	margin: 10px 0px;
 	padding: 20px;
 	background: #f4f7f8;
 	border-radius: 8px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+@media (max-width: 1025px){
+    .form-style-5{
+		margin: 10px auto;
+	}
+}
+
 .form-style-5 fieldset{
 	border: none;
 }

@@ -127,7 +127,7 @@
     "link": "technical+writing",
     "title": "Technical Writing",
     "subHead": "Generate higher dividends with Technical Content that doesn’t just informs but also performs.",
-    "illus": "tecWriting.svg",
+    "illus": "Technical_Write_Up.svg",
     "sugg":[]
   },
   {
@@ -157,7 +157,7 @@
     "link": "website+content",
     "title": "Website Content",
     "subHead": "Convert your website to a lead conversion engine with our premium content",
-    "illus": "webContent.svg",
+    "illus": "Website_Content.svg",
     "sugg":[]
   },
   {
@@ -345,7 +345,7 @@
     "link": "articles",
     "title": "Articles",
     "subHead": "Convert passive readers to active consumers with premium Articles. ",
-    "illus": "article.svg",
+    "illus": "Article.svg",
     "suggestedtopic": "Articles",
     "sugg":[
       {
@@ -381,7 +381,7 @@
     "link": "seo",
     "title": "SEO Articles",
     "subHead": "Get your content discovered by our premium onsite SEO Optimization ",
-    "illus": "article.svg",
+    "illus": "Article.svg",
     "suggestedtopic": "Articles",
     "sugg":[
       {
@@ -416,7 +416,7 @@
     "link": "technical+articles",
     "title": "Technical Articles",
     "subHead": "We understand your technical rigmaroles comprehensively so that we can explain it easily. ",
-    "illus": "article.svg",
+    "illus": "Article.svg",
     "suggestedtopic": "Articles",
     "sugg":[
       {
@@ -450,7 +450,7 @@
     "link": "informative+articles",
     "title": "Informative Articles",
     "subHead": "Provide value to your readers, build a reputable brand, and scale up your business. ",
-    "illus": "article.svg",
+    "illus": "Article.svg",
     "suggestedtopic": "Articles",
     "sugg":[
       {
@@ -487,7 +487,7 @@
     "link": "product+based",
     "title": "Product Based Articles",
     "subHead": "Market your product the right way. Use our effective product marketing services aided by Izart’s finest writers. ",
-    "illus": "article.svg",
+    "illus": "Article.svg",
     "suggestedtopic": "Articles",
     "sugg":[
       {
@@ -522,7 +522,7 @@
       "link": "blog",
       "title": "Blog Writing",
       "subHead": "Drive Conversions and build long term relationships with your consumers through our premium blog writing service. ",
-      "illus": "blogs.svg",
+      "illus": "Blog.svg",
       "sugg":[]
 
   },
@@ -538,7 +538,7 @@
     "link": "whitepaper",
     "title": "White Papers",
     "subHead": "Position yourself as an Industry Leader today. Get the best writers to write Accurate, In-depth, and Persuasive whitepapers.",
-    "illus": "whitepaper.svg",
+    "illus": "Whitepaper.svg",
     "sugg":[]
 
 }

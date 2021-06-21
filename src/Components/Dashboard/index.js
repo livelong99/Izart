@@ -5,6 +5,7 @@ import {
     FirebaseAuthConsumer
 } from "@react-firebase/auth";
 import {UserContext} from "../../Store";
+import "./dash.css"
 
 const Dashboard = ({sel}) => {
     const [User, setUser] = useContext(UserContext);

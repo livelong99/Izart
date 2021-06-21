@@ -59,6 +59,7 @@ const isInViewport = (element) => {
           <Route path="/dashboard" exact><Dashboard sel={2} /></Route>
           <Route path="/dashboard/add" exact><Dashboard sel={1} /></Route>
           <Route path="/dashboard/cart" exact><Dashboard sel={3} /></Route>
+          <Route path="/dashboard/account" exact><Dashboard sel={4} /></Route>
           <Route path="/" exact><Home/></Route>
           <Route path="/about" exact><About/></Route>
           {servData.map(serv => (
