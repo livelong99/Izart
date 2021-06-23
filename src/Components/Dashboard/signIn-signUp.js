@@ -18,7 +18,10 @@ const Sign = () => {
 
     const googleSign = () => {
         var googleAuthProvider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(googleAuthProvider)
+        firebase.auth().signInWithRedirect(googleAuthProvider);
+
+        firebase.auth()
+        .getRedirectResult()
         .then((result) => {
             setUser(result.user);
             window.location.href="/dashboard";
