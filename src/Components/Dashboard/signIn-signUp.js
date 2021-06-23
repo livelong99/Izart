@@ -20,22 +20,22 @@ const Sign = () => {
         var googleAuthProvider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithRedirect(googleAuthProvider);
 
-        firebase.auth()
-        .getRedirectResult()
-        .then((result) => {
-            setUser(result.user);
-            window.location.href="/dashboard";
-          }).catch((error) => {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            console.log(error);
-            // The email of the user's account used.
-            var email = error.email;
-            // The firebase.auth.AuthCredential type that was used.
-            var credential = error.credential;
-            // ...
-          });
+        // firebase.auth()
+        // .getRedirectResult()
+        // .then((result) => {
+        //     setUser(result.user);
+        //     window.location.href="/dashboard";
+        //   }).catch((error) => {
+        //     // Handle Errors here.
+        //     var errorCode = error.code;
+        //     var errorMessage = error.message;
+        //     console.log(error);
+        //     // The email of the user's account used.
+        //     var email = error.email;
+        //     // The firebase.auth.AuthCredential type that was used.
+        //     var credential = error.credential;
+        //     // ...
+        //   });
     }
 
 
