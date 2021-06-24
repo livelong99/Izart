@@ -281,16 +281,16 @@ const AddItm = () => {
         return(
             <fieldset>
                 <legend><span class="number">13</span> Delivery</legend>
-                <select id="Delivery" name="Delivery">
+                <select id="Delivery" onChange={(event) => {setDelivery(price[product][type][event.target.value]); console.log(delivery);}} name="Delivery">
                 <optgroup label="Delivery">
                 <option value="none" selected disabled hidden>
                     Select an Option
                 </option>
-                {price[product][type].map((type) => {
+                {price[product][type].map((type,index) => {
                     if(product == "Website_Content"){
                         type.charge = type.lcharge*landingpage + type.nlcharge*nonlandingpage;
                     }
-                    return(<option onClick={() => {setDelivery(type);}} value={type}>{type.deliveryName + "  - Delivery in " + type.days + " days - ₹" + type.charge}</option>);
+                    return(<option value={index}>{type.deliveryName + "  - Delivery in " + type.days + " days - ₹" + type.charge}</option>);
                 })}
                 </optgroup>
                 </select>
