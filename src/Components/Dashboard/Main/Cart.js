@@ -6,9 +6,11 @@ import "firebase/firestore";
 import {UserContext} from "../../../Store";
 import {CartContext} from "../../../Store";
 import dimensions from "../../../OtherFiles/Dimensions";
+import axios from "axios";
+
 
 const Cart = () => {
-    const db = firebase.firestore();    
+    const db = firebase.firestore();
 
     const [dash, setDash] = useContext(DashContext);
     const [User, setUser] = useContext(UserContext);
@@ -43,11 +45,69 @@ const Cart = () => {
             });
             setCartPrice(price)
         }
-        
+
         if(cart.length === 0)
             getData();
     });
-    
+    function loadScript(src){
+      return new Promise((resolve) => {
+        const script = document.createElement('script')
+        script.src = src
+     		script.onload = () => {
+          console.log("No Errrrrrror")
+     			resolve(true)
+     		}
+     		script.onerror = () => {
+          console.log("Errrrrrror")
+     			resolve(false)
+     		}
+     		document.body.appendChild(script)
+    })
+
+    }
+    async function displayRazorPay(){
+        const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
+        if(res){
+          console.log("script running")
+        }
+        
+        const razorpaydata = await axios
+        .post("https://pure-lake-59629.herokuapp.com/razorpay", {
+            amount: cartPrice
+        })
+        .then((t)=>
+        t.data
+      )
+
+      console.log(razorpaydata)
+
+        const options = {
+        key: "rzp_test_vlZKt0MAoUmvr4", // Enter the Key ID generated from the Dashboard
+        amount: razorpaydata.amount.toString(), // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+        currency: razorpaydata.currency,
+        name: "Acme Corp",
+        description: "Test Transaction",
+        image: "https://example.com/your_logo",
+        order_id: razorpaydata.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+        handler: function (response){
+            alert(response.razorpay_payment_id)
+            alert(response.razorpay_order_id)
+            alert(response.razorpay_signature)
+        },
+        prefill: {
+            name: "Gaurav Kumar",
+            email: "gaurav.kumar@example.com",
+        },
+        theme: {
+          color: "#3399cc"
+      }
+  }
+  console.log("reached here")
+  const rzp = new window.Razorpay(options);
+  
+  rzp.open();
+}
+
 
     return(
         <div className="cartContainer">
@@ -84,10 +144,10 @@ const Cart = () => {
                         <PayL2>2000$</PayL2>
                     </PayListItem> */}
                 </div>
-                <div className="checkOut">
+                <div className="checkOut" onClick={() => {displayRazorPay()}}>
                     <h2 className="val">{"₹" + cartPrice}</h2>
                     <h2 className="desc">Checkout</h2>
-                    <h2 className="arrow">➜</h2>
+                    <h2 className="arrow" >➜</h2>
                 </div>
             </div>
         </div>

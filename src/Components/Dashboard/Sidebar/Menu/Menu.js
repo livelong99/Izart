@@ -11,7 +11,7 @@ import dimension from "../../../../OtherFiles/Dimensions"
 
 //Desktop
 const Container = styled.div`
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
 `
 
@@ -56,18 +56,18 @@ const Menu = () => {
     if(width>1000){
         return (
             <Container>
-                <Link to="/dashboard/add"><MenuLink title="Orders" icon={'add'} active={dash==1 ? true : false} last={0}/></Link>                
+                <Link to="/dashboard/add"><MenuLink title="Add" icon={'add'} active={dash==1 ? true : false} last={0}/></Link>                
                 <Link to="/dashboard"><MenuLink title="Orders" icon={'order'} active={dash==2 ? true : false} last={0}/></Link>
                 <Link to="/dashboard/cart"><MenuLink title="Cart" icon={'cart'} active={dash==3 ? true : false} last={0}/></Link>
                 <Link to="/dashboard/account"><MenuLink title="Account" icon={'account'} active={dash==4 ? true : false} last={0}/></Link>
-                <a onClick={() => {firebase.auth().signOut(); window.location.href="/login";}}><MenuLink title="Account" icon={'logout'} last={1}/></a>
+                <a onClick={() => {firebase.auth().signOut(); window.location.href="/login";}}><MenuLink title="LogOut" icon={'logout'} last={1}/></a>
             </Container>
         )
     }
     else
         return(
             <MobileContainer>
-                <Link to="/dashboard/add"><MenuLink title="Orders" icon={'add'} active={dash==1 ? true : false}/></Link>
+                <Link to="/dashboard/add"><MenuLink title="Add" icon={'add'} active={dash==1 ? true : false}/></Link>
                 <Link to="/dashboard"><MenuLink title="Orders" icon={'order'} active={dash==2 ? true : false}/></Link>
                 <Link to="/dashboard/cart"><MenuLink title="Cart" icon={'cart'} active={dash==3 ? true : false}/></Link>
                 <Link to="/dashboard/account"><MenuLink title="Account" icon={'account'} active={dash==4 ? true : false}/></Link>
