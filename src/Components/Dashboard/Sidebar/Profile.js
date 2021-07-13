@@ -39,7 +39,6 @@ const Profile = () => {
     const [expand, setExpand] = useContext(ExpandContext);
 
     useEffect(() => {
-        console.log(JSON.stringify(User));
     })
 
     return (

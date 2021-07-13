@@ -50,6 +50,7 @@ const AddItm = () => {
     const createData = (data) => {
         return db.collection('Cart').doc(User.uid).collection('Items').add({
             created: firebase.firestore.FieldValue.serverTimestamp(),
+            
             data
         }).then(() => {window.location.href="/dashboard/cart"; getData();})
     };

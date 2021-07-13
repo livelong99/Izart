@@ -52,7 +52,7 @@ const isInViewport = (element) => {
     <div>
       <div>
       <Router>
-        <Load tm={2000}/>
+        <Load tm={3500}/>
         {/* <NewsLetter/> */}
         <Switch>
           <Route path="/login" exact component={Sign}/>

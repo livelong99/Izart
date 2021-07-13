@@ -234,6 +234,43 @@
     vertical-align: middle;
 }
 
+.AfterPaymentLoad{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    background-color: #FFFFFF;
+}
+
+.AfterPaymentLoad .AfterPaymentText{
+    width: 100%;
+    text-align: center;
+    font-family: "League Spartan Variable";
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 20%;
+    color: #303778;
+}
+
+.AfterPaymentLoad .OrderProcessback{
+    width: 40%;
+    height: 7px;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color: #E5E5E5;
+}
+
+.AfterPaymentLoad .OrderProcessback .OrderProcessfront {
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #303778;
+}
+
+
 @media (max-width: 1025px){
     .cartContainer{
         width: 96%;
